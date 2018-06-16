@@ -4,8 +4,12 @@ import { Reporter } from "../support/reporter";
 const jsonReports = process.cwd() + "/reports/json";
 
 export const config: Config = {
+    // The address of a running selenium server.
+    seleniumServerJar: require('selenium-standalone-jar').path,
+    seleniumAddress: process.env.seleniumAddress || 'http://localhost:4444/wd/hub',
+    chromeDriver: require('chromedriver').path,
 
-    seleniumAddress: "http://127.0.0.1:4444/wd/hub",
+    directConnect: true,
 
     SELENIUM_PROMISE_MANAGER: false,
 
