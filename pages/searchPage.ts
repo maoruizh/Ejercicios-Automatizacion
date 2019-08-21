@@ -5,7 +5,7 @@ export class SearchPageObject {
     public searchButton: any;
 
     constructor() {
-        this.searchTextBox = $("#lst-ib");
+        this.searchTextBox = $("input[name='q']");
         this.searchButton = $("input[value='Google Search']");
     }
 }
