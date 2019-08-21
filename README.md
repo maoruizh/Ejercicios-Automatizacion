@@ -74,6 +74,22 @@ npm test
 ```
 ![result](https://raw.githubusercontent.com/igniteram/protractor-cucumber-typescript/master/images/protractor-cucumber-typescript-result.gif)
 
+#### Configuring VS Code
+Install Cucumber (Gherkin) Full Support
+* run mkdir .vscode && touch .vscode/settings.json
+* paste this json into settings.json
+```
+{
+    "cucumberautocomplete.steps": [
+        "stepdefinitions/*.ts",
+        "stepdefinitions/**/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true
+}
+```
+
+
 #### Writing Features
 ```
 Feature: To search typescript in google

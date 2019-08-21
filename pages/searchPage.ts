@@ -1,8 +1,8 @@
-import { $ } from "protractor";
+import { $, ElementFinder } from "protractor";
 
 export class SearchPageObject {
-    public searchTextBox: any;
-    public searchButton: any;
+    public searchTextBox: ElementFinder;
+    public searchButton: ElementFinder;
 
     constructor() {
         this.searchTextBox = $("input[name='q']");
