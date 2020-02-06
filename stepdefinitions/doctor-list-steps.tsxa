@@ -1,0 +1,60 @@
+import { browser, ElementFinder } from "protractor";
+import { DoctorListPageObject } from "../pages/doctor-list-page";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const DoctorList: DoctorListPageObject = new DoctorListPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "Doctor List" page$/, async () => {
+    await browser.get(DoctorListPageObject.url)
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+//Assertions
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await DoctorList.message.getText()
+    expect(actualMessage).to.be.equal(expectedMessage)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await DoctorList.table.isDisplayed()
+    expect(actualTable).to.be.true
+}); 
+
+Then(/^In the row 1 I should see the Document ID "(.*?)"$/, async (expectedMessage) => {
+    let actualdocumentOfId = await DoctorList.documentOfId.getText()
+    expect(actualdocumentOfId).to.be.equal(expectedMessage)
+});
+
+Then(/^In the row 1 I should see the Type of ID "(.*?)"$/, async (expectedMessage) => {
+    let actualtypeOfDocumentId = await DoctorList.typeOfDocumentId.getText()
+    expect(actualtypeOfDocumentId).to.be.equal(expectedMessage)
+});
+
+Then(/^In the row 1 I should see the name "(.*?)"$/, async (expectedMessage) => {
+    let actualname = await DoctorList.name.getText()
+    expect(actualname).to.be.equal(expectedMessage)
+});
+
+Then(/^In the row 1 I should see the last Name "(.*?)"$/, async (expectedMessage) => {
+    let actuallastName = await DoctorList.lastName.getText()
+    expect(actuallastName).to.be.equal(expectedMessage)
+});
+
+Then(/^In the row 1 I should see the telephone "(.*?)"$/, async (expectedMessage) => {
+    let actualtelephone = await DoctorList.telephone.getText()
+    expect(actualtelephone).to.be.equal(expectedMessage)
+});
+
+//Then(/^the name in the row "(.*?)" should be "(.*?)"$/, async function(row, expectedName) {
+  //  let actual = await DoctorList.getTableCell(row, 0).getText()
+    //await expect(actual).equals(expectedName)
+//})
+

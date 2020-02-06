@@ -1,0 +1,87 @@
+import { browser, ElementFinder } from "protractor";
+import { AddHospitalPageObject } from "../pages/add-Hospital-page";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const addHospital: AddHospitalPageObject = new AddHospitalPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "Add Hospital" page$/, async () => {
+    await browser.get(AddHospitalPageObject.url)
+});
+
+When(/^the user enter the code number "(.*?)"$/, async (code) => {
+    await addHospital.code.sendKeys(code)
+});
+
+When(/^the user enter his name "(.*?)"$/, async (name) => {
+    await addHospital.name.sendKeys(name)
+});
+
+When(/^the user enter his address "(.*?)"$/, async (address) => {
+    await addHospital.address.sendKeys(address)
+});
+
+When(/^the user enter his telephone "(.*?)"$/, async (telephone) => {
+    await addHospital.telephone.sendKeys(telephone)
+});
+
+When(/^the user click on department Antioquia$/, async () => {
+    await addHospital.department.click()
+});
+
+When(/^the user select "(.*?)"$/, async (municipality) => {
+    await addHospital.municipality.click()
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+When(/^the user click on the save button$/, async () => {
+    await addHospital.save.click()
+});
+
+//Assertions
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await addHospital.message.getText()
+    expect(actualMessage).to.be.equal(expectedMessage)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await addHospital.tablemessage.isDisplayed()
+    expect(actualTable).to.be.true
+}); 
+
+Then(/^code typed by user should be displayed in the code row "(.*?)"$/, async (codemessage) => {
+    let actualnamerow = await addHospital.codemessage.getText()
+    expect(actualnamerow).to.be.equals(codemessage)
+});
+
+Then(/^name typed by user should be displayed in the name row "(.*?)"$/, async (namemessage) => {
+    let actualnamerow = await addHospital.namemessage.getText()
+    expect(actualnamerow).to.be.equals(namemessage)
+});
+
+Then(/^address typed by user should be displayed in the address row "(.*?)"$/, async (addressmessage) => {
+    let actualnamerow = await addHospital.addressmessage.getText()
+    expect(actualnamerow).to.be.equals(addressmessage)
+});
+
+Then(/^telephone typed by user should be displayed in the telephone row "(.*?)"$/, async (telephonemessage) => {
+    let actualnamerow = await addHospital.telephonemessage.getText()
+    expect(actualnamerow).to.be.equals(telephonemessage)
+});
+
+Then(/^Department typed by user should be displayed in the department row "(.*?)"$/, async (departmentmessage) => {
+    let actualnamerow = await addHospital.departmentmessage.getText()
+    expect(actualnamerow).to.be.equals(departmentmessage)
+});
+
+Then(/^municipality typed by user should be displayed in the municipalitty row "(.*?)"$/, async (municipalitymessage) => {
+    let actualnamerow = await addHospital.municipalitymessage.getText()
+    expect(actualnamerow).to.be.equals(municipalitymessage)
+});

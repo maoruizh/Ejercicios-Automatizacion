@@ -1,0 +1,87 @@
+import { browser, ElementFinder } from "protractor";
+import { AddPatientPageObject } from "../pages/add-patient-page";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const addPatient: AddPatientPageObject = new AddPatientPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "Add Patient" page$/, async () => {
+    await browser.get(AddPatientPageObject.url)
+});
+
+When(/^the user enter his "(.*?)" "(.*?)"$/, async (fieldName, fieldValue) => {
+    let field: ElementFinder = addPatient[fieldName + 'Field'];
+    await field.sendKeys(fieldValue)
+    //await browser.sleep(1000)
+});
+
+When(/^the user click on Type of ID$/, async () => {
+    await addPatient.identificationTypeSelect.click()  
+});
+
+When(/^the user select "(.*?)"$/, async (identificationTypeOption) => {
+    await addPatient.identificationTypeOption.click()    
+});
+
+When(/^the user enter his ID "(.*?)"$/, async (identification) => {
+    await addPatient.identification.sendKeys(identification)  
+});
+
+When(/^the user click on Prepaid Health$/, async () => {
+    await addPatient.prepaidHealth.click()  
+});
+
+When(/^the user click on the save button$/, async () => {
+    await addPatient.save.click()  
+});
+
+//Assertions
+
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await addPatient.message.getText()
+    expect(actualMessage).to.be.equal(expectedMessage)
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await addPatient.table.isDisplayed()
+    expect(actualTable).to.be.true
+});  
+
+Then(/^name typed by user should be displayed in the Nombre row "(.*?)"$/, async (namerow) => {
+    let actualnamerow = await addPatient.namerow.getText()
+    expect(actualnamerow).to.be.equals(namerow)
+});
+
+Then(/^last name typed by user should be displayed in the Apellidos row "(.*?)"$/, async (lastnamerow) => {
+    let actuallastnamerow = await addPatient.lastnamerow.getText()
+    expect(actuallastnamerow).to.be.equals(lastnamerow)
+});
+
+Then(/^phone typed by user should be displayed in the Teléfono row "(.*?)"$/, async (Phonerow) => {
+    let actualPhonerow = await addPatient.Phonerow.getText()
+    expect(actualPhonerow).to.be.equals(Phonerow)
+});
+
+Then(/^document type typed by user should be displayed in the Tipo de documento de identidad row "(.*?)"$/, async (identificationTypeSelectrow) => {
+    let actualidentificationTypeSelectrow = await addPatient.identificationTypeSelectrow.getText()
+    expect(actualidentificationTypeSelectrow).to.be.equals(identificationTypeSelectrow)
+});
+
+//nos saltamos este Step porque en la aplicacion el elemento esta mal codificado y repite el nombre
+// Then(/^document id typed by user should be displayed in the Documento de identidad row "(.*?)"$/, async (identificationrow) => {
+//     let actualidentificationrow = await addPatient.identificationrow.getText()
+//     expect(actualidentificationrow).to.be.equals(identificationrow)
+// });
+
+Then(/^Prepaid Health marked by user should be displayed in the Prepaid Health row$/, async () => {
+    let actualprepaidHealthrow = await addPatient.prepaidHealthrow.isDisplayed()
+    expect(actualprepaidHealthrow).to.be.true
+});

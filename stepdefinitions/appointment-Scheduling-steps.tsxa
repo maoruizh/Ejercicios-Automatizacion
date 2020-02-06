@@ -1,0 +1,81 @@
+import { browser, ElementFinder } from "protractor";
+import { appointmentSchedulingPageObject } from "../pages/appointment-Scheduling-page";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const addappointment: appointmentSchedulingPageObject = new appointmentSchedulingPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "appointment Scheduling" page$/, async () => {
+    await browser.get(appointmentSchedulingPageObject.url)
+});
+
+When(/^the user enter the date day "(.*?)"$/, async (appointment) => {
+    await addappointment.apointment.sendKeys(appointment)
+});
+
+When(/^the user enter the patient ID "(.*?)"$/, async (patientid) => {
+    await addappointment.patientid.sendKeys(patientid)
+});
+
+When(/^the user enter the doctor ID "(.*?)"$/, async (doctorid) => {
+    await addappointment.doctorid.sendKeys(doctorid)
+});
+
+When(/^the user enter a observation "(.*?)"$/, async (observations) => {
+    await addappointment.observations.sendKeys(observations)
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+When(/^the user click on the save button$/, async () => {
+    await addappointment.save.click()
+});
+
+
+
+//Assertions
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await addappointment.message.getText()
+    expect(actualMessage).to.be.equal(expectedMessage)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await addappointment.tablemessage.isDisplayed()
+    expect(actualTable).to.be.true
+}); 
+
+Then(/^the date day typed by user should be displayed in the date row "(.*?)"$/, async (datemessage) => {
+    let actualnamerow = await addappointment.datemessage.getText()
+    expect(actualnamerow).to.be.equals(datemessage)
+});
+
+Then(/^the doctor id returned by the system should be displayed in the doctor id row "(.*?)"$/, async (doctoridmessage) => {
+    let actualnamerow = await addappointment.doctoridmessage.getText()
+    expect(actualnamerow).to.be.equals(doctoridmessage)
+});
+
+Then(/^the doctor name returned by the system should be displayed in the doctor name row "(.*?)"$/, async (doctornamemessage) => {
+    let actualnamerow = await addappointment.doctornamemessage.getText()
+    expect(actualnamerow).to.be.equals(doctornamemessage)
+});
+
+Then(/^the patient id returned by the system should be displayed in the patient id row "(.*?)"$/, async (patientidmessage) => {
+    let actualnamerow = await addappointment.patientidmessage.getText()
+    expect(actualnamerow).to.be.equals(patientidmessage)
+});
+
+Then(/^the patient name returned by the system should be displayed in the patient name row "(.*?)"$/, async (patientnamemessage) => {
+    let actualnamerow = await addappointment.patientnamemessage.getText()
+    expect(actualnamerow).to.be.equals(patientnamemessage)
+});
+
+Then(/^the observations typed by the user should be displayed in the observations row "(.*?)"$/, async (observationsmessage) => {
+    let actualnamerow = await addappointment.observationsmessage.getText()
+    expect(actualnamerow).to.be.equals(observationsmessage)
+});

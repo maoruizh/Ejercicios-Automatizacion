@@ -1,0 +1,65 @@
+import { browser, ElementFinder } from "protractor";
+import { AddroomPageObject } from "../pages/add-room-page";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const Addroom: AddroomPageObject = new AddroomPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "Add Room" page$/, async () => {
+    await browser.get(AddroomPageObject.url)
+});
+
+When(/^the user enter his number Room "(.*?)"$/, async (numberroom) => {
+    await Addroom.numberroom.sendKeys(numberroom)  
+});
+
+When(/^the user select type of Room "(.*?)"$/, async (deluxeroom) => {
+    await Addroom.deluxeroom.click()    
+});
+
+When(/^the user select Feature of the Room "(.*?)"$/, async (directv) => {
+    await Addroom.directv.click()  
+});
+
+When(/^the user click on the save button$/, async () => {
+    await Addroom.save.click()  
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+//Assertions
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await Addroom.message.getText()
+    expect(actualMessage).to.be.equal(expectedMessage)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await Addroom.table.isDisplayed()
+    expect(actualTable).to.be.true
+}); 
+
+Then(/^Number Room typed by user should be displayed in the number Room row "(.*?)"$/, async (roomnumber) => {
+    let actualnamerow = await Addroom.roomnumber.getText()
+    expect(actualnamerow).to.be.equals(roomnumber)
+});
+
+Then(/^Room type typed by user should be displayed in the Room type row "(.*?)"$/, async (roomtype) => {
+    let actualnamerow = await Addroom.roomtype.getText()
+    expect(actualnamerow).to.be.equals(roomtype)
+});
+
+Then(/^Doble Room typed by user should be displayed in the Doble Room row$/, async () => {
+    let actualprepaidHealthrow = await Addroom.doubleroom.isDisplayed()
+    expect(actualprepaidHealthrow).to.be.true
+});
+
+Then(/^DirecTV Room typed by user should be displayed in the DirecTV Room row$/, async () => {
+    let actualprepaidHealthrow = await Addroom.directvroom.isDisplayed()
+    expect(actualprepaidHealthrow).to.be.true
+});

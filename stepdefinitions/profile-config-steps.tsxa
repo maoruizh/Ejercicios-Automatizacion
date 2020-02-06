@@ -1,0 +1,84 @@
+import { browser, ElementFinder } from "protractor";
+import {profileconfigPageObject } from "../pages/profile-config-pages";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const profileconfig: profileconfigPageObject = new profileconfigPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "profile config" page$/, async () => {
+    await browser.get(profileconfigPageObject.url)
+});
+
+When(/^the user enter his full name "(.*?)"$/, async (fullname) => {
+    await profileconfig.fullname.sendKeys(fullname)
+});
+
+When(/^the user enter his full last name "(.*?)"$/, async (fulllastname) => {
+    await profileconfig.fulllastname.sendKeys(fulllastname)
+});
+
+When(/^the user enter his telephone "(.*?)"$/, async (telephone) => {
+    await profileconfig.telephone.sendKeys(telephone)
+});
+
+When(/^the user select Disease history "(.*?)"$/, async (listdisease) => {
+    await profileconfig.listdisease.click()    
+});
+
+When(/^the user select type of Disease "(.*?)"$/, async (disease) => {
+    await profileconfig.disease.click()   
+    await profileconfig.out.click()  
+});
+
+When(/^the user enter his ID "(.*?)"$/, async (id) => {
+    await profileconfig.id.sendKeys(id)
+});
+
+When(/^the user click on the save button$/, async () => {
+    await profileconfig.save.click()  
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+
+//Assertions
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await profileconfig.message.getText()
+    expect(actualMessage).to.be.equal(expectedMessage)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await profileconfig.tablemessage.isDisplayed()
+    expect(actualTable).to.be.true
+}); 
+
+Then(/^the name typed by user should be displayed in the name row "(.*?)"$/, async (namemessage) => {
+    let actualtextrow = await profileconfig.namemessage.getText()
+    expect(actualtextrow).to.be.equals(namemessage)
+});
+
+Then(/^the lastname typed by user should be displayed in the lastname row "(.*?)"$/, async (lastnamemessage) => {
+    let actualtextrow = await profileconfig.lastnamemessage.getText()
+    expect(actualtextrow).to.be.equals(lastnamemessage)
+});
+
+Then(/^the telephone typed by user should be displayed in the telephone row "(.*?)"$/, async (telephonemessage) => {
+    let actualtextrow = await profileconfig.telephonemessage.getText()
+    expect(actualtextrow).to.be.equals(telephonemessage)
+});
+
+Then(/^the Disease typed by user should be displayed in the Disease row "(.*?)"$/, async (diseasemessage) => {
+    let actualtextrow = await profileconfig.diseasemessage.getText()
+    expect(actualtextrow).to.be.equals(diseasemessage)
+});
+
+Then(/^the ID typed by user should be displayed in the ID row "(.*?)"$/, async (IDmessage) => {
+    let actualtextrow = await profileconfig.IDmessage.getText()
+    expect(actualtextrow).to.be.equals(IDmessage)
+});

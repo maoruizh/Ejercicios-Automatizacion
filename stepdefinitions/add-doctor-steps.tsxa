@@ -1,0 +1,105 @@
+import { browser, ElementFinder } from "protractor";
+import { AddDoctorPageObject } from "../pages/add-doctor-page";
+import { Then } from "cucumber";
+const { Given, When } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+
+const addDoctor: AddDoctorPageObject = new AddDoctorPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the "Add Doctor" page$/, async () => {
+    await browser.get(AddDoctorPageObject.url)
+});
+
+When(/^the user enter his "(.*?)" "(.*?)"$/, async (fieldName, fieldValue) => {
+    let field: ElementFinder = addDoctor[fieldName + 'Field'];
+    await field.sendKeys(fieldValue)
+    await browser.sleep(1000)
+});
+
+
+// When(/^the user enter his name "(.*?)"$/, async (name) => {
+//     await addDoctor.nameField.sendKeys(name)
+// });
+
+// When(/^the user enter his lastname "(.*?)"$/, async (lastname) => {
+//     await addDoctor.lastnameField.sendKeys(lastname)
+// });
+
+// When(/^the user enter his telephone number "(.*?)"$/, async (telephone) => {
+//     await addDoctor.telephoneField.sendKeys(telephone)
+// });
+
+
+When(/^the user click on Type of ID$/, async () => {
+    await addDoctor.identificationTypeSelect.click()
+});
+
+When(/^the user select "(.*?)"$/, async (identificationTypeOption) => {
+    await addDoctor.identificationTypeOption.click()
+});
+
+When(/^the user enter his ID "(.*?)"$/, async (identification) => {
+    await addDoctor.identification.sendKeys(identification)
+});
+
+When(/^the user dont enter his ID "(.*?)"$/, async (identification) => {
+    await addDoctor.identification.sendKeys(identification)
+});
+
+When(/^the user click on the save button$/, async () => {
+    await addDoctor.save.click()
+});
+
+//Assertions -------------------------------------------------------------------------------------------------------------------
+
+Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await addDoctor.message.getText()
+    expect(actualMessage).to.be.equals(expectedMessage)
+});
+
+Then(/^I see error Message with text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await addDoctor.errormessage.getText()
+    expect(actualMessage).to.be.equals(expectedMessage)
+});
+
+When(/^the user await$/, async () => {
+    await browser.sleep(1000)
+});
+
+Then(/^I see a table with the summary$/, async () => {
+    let actualTable = await addDoctor.table.isDisplayed()
+    expect(actualTable).to.be.true
+});
+
+Then(/^name typed by user should be displayed in the Nombre row "(.*?)"$/, async (namerow) => {
+    let actualnamerow = await addDoctor.namerow.getText()
+    expect(actualnamerow).to.be.equals(namerow)
+});
+
+Then(/^last name typed by user should be displayed in the Apellidos row "(.*?)"$/, async (lastnamerow) => {
+    let actuallastnamerow = await addDoctor.lastnamerow.getText()
+    expect(actuallastnamerow).to.be.equals(lastnamerow)
+});
+
+Then(/^phone typed by user should be displayed in the Teléfono row "(.*?)"$/, async (Phonerow) => {
+    let actualPhonerow = await addDoctor.Phonerow.getText()
+    expect(actualPhonerow).to.be.equals(Phonerow)
+});
+
+Then(/^document type typed by user should be displayed in the Tipo de documento de identidad row "(.*?)"$/, async (identificationTypeSelectrow) => {
+    let actualidentificationTypeSelectrow = await addDoctor.identificationTypeSelectrow.getText()
+    expect(actualidentificationTypeSelectrow).to.be.equals(identificationTypeSelectrow)
+});
+
+Then(/^document id typed by user should be displayed in the Documento de identidad row "(.*?)"$/, async (identificationrow) => {
+    let actualidentificationrow = await addDoctor.identificationrow.getText()
+    expect(actualidentificationrow).to.be.equals(identificationrow)
+});
+
+Then(/^the Documento de identidad row should be displayed empty "(.*?)"$/, async (identificationrow) => {
+    let actualidentificationrow = await addDoctor.identificationrow.getText()
+    expect(actualidentificationrow).to.be.equals(identificationrow)
+});
