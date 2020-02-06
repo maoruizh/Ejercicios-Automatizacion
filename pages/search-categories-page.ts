@@ -8,7 +8,7 @@ export class LoginmodalPageObject {
     public emailField: ElementFinder;
     public tecnologia: ElementFinder;
     public samsungWatch: ElementFinder;
-    public active2-44: ElementFinder;
+    public active: ElementFinder;
   
     //Assertions
            
@@ -16,7 +16,7 @@ export class LoginmodalPageObject {
         this.categorias = $(".jsx-1339749587.line")
         this.emailField = $(".active:nth-child(2)")
         this.tecnologia = $(".InputPassword__inputText__2IUUv")
-        this.active2-44 = $(".Button__main__1NDc9.Button__green__1fhy5")
+        this.active = $(".Button__main__1NDc9.Button__green__1fhy5")
        
     //Assertions
     

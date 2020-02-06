@@ -37,7 +37,7 @@ export const config: Config = {
         format: "json:./reports/json/cucumber_report.json",
         require: ["../../typeScript/stepdefinitions/*.js", "../../typeScript/support/*.js"],
         strict: true,
-        tags: "@TypeScriptScenario or @CucumberScenario or @ProtractorScenario",
+        tags: "@mao",
     },
 
     onComplete: () => {
