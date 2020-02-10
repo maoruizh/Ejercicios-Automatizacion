@@ -28,7 +28,7 @@ export class LoginmodalPageObject {
      this.mao = $(".fb-masthead-login")
      this.table = $(".fb-masthead-login__name")
      this.firstOption = $(".fb-filter-header__list-item")
-     //this.secondOption = $(".")
+     this.secondOption = $(".fb-filter-header__list-item:nth-child(2) > a:nth-child(1)")
      this.thirdOption = $(".fb-filter-header__log-out")
   }
 }

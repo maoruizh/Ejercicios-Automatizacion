@@ -1,5 +1,5 @@
 import { browser, ElementFinder } from "protractor";
-import {LoginmodalPageObject } from "../pages/Login-Modal-page";
+import {LoginmodalPageObject } from "../../pages/Second-page/Login-Modal-page";
 import { Then } from "cucumber";
 const { Given, When, setDefaultTimeout } = require("cucumber");
 import * as chai from 'chai'
