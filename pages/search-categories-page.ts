@@ -1,11 +1,10 @@
 import { $, ElementFinder } from "protractor";
 //URL
 //Elementos de la pagina
-export class LoginmodalPageObject {
+export class SearchPageObject {
     static url = "https://www.falabella.com.co/falabella-co/";
     
     public categorias: ElementFinder;
-    public emailField: ElementFinder;
     public tecnologia: ElementFinder;
     public samsungWatch: ElementFinder;
     public active: ElementFinder;
@@ -13,11 +12,11 @@ export class LoginmodalPageObject {
     //Assertions
            
     constructor() {
-        this.categorias = $(".jsx-1339749587.line")
-        this.emailField = $(".active:nth-child(2)")
-        this.tecnologia = $(".InputPassword__inputText__2IUUv")
-        this.active = $(".Button__main__1NDc9.Button__green__1fhy5")
-       
+        this.categorias = $("#hamburgerMenu")
+        this.tecnologia = $("#item-1")
+        this.samsungWatch = $(".SecondLevelItems_displaySubMenuDesktop__33Gpt .SecondLevelItems_submenuElements__3l4ER  :nth-child(4) .ThirdLevelItems_listElements__ZcR7D:nth-child(2) .ThirdLevelItems_submenuElementLi__n49I5")
+        this.active = $(".jsx-3185677989 #testId-pod-image-4181242")
+
     //Assertions
     
   }

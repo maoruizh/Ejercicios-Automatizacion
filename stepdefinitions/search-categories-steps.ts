@@ -1,0 +1,70 @@
+import { browser, ElementFinder } from "protractor";
+import {SearchPageObject } from "../pages/search-categories-page";
+import { Then } from "cucumber";
+const { Given, When, setDefaultTimeout } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+setDefaultTimeout(10000);
+
+const search: SearchPageObject = new SearchPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the Falabella page$/, async () => {
+    return await browser.get(SearchPageObject.url)
+});
+
+When(/^the user click on button categorias$/, async () => {
+    await search.categorias.click()  
+});
+
+When(/^the user click on button tecnología$/, async () => {
+    await search.tecnologia.click()
+});
+
+When(/^the user click on button Samsung Watch$/, async () => {
+    await search.samsungWatch.click()
+});
+
+When(/^the user click on picture Galaxy Watch Active 2 44 mm$/, async () => {
+    await search.active.click()
+});
+
+When(/^the user wait$/, async () => {
+    await browser.sleep(3000)
+});
+
+
+//Assertions
+// Then(/^can be seen in the header a Message with the text "(.*?)"$/, async (expectedMessage) => {
+//     let actualMessage = await Loginmodal.bienvenido.getText()
+//     expect(actualMessage.replace('\n', '')).to.be.equals(expectedMessage)
+// });
+
+// When(/^the user should be click on the word Mao$/, async () => {
+//     await Loginmodal.mao.click()  
+// });
+
+// Then(/^can be seen a table with sometime options$/, async () => {
+//     let actualTable = await Loginmodal.table.isDisplayed()
+//     expect(actualTable).to.be.true
+// });
+
+// Then(/^the first option is "(.*?)"$/, async (expectedMessage) => {
+//     let actualMessage = await Loginmodal.firstOption.getText()
+//     expect(actualMessage).to.be.equals(expectedMessage)
+// });
+
+// Then(/^the second option is "(.*?)"$/, async (expectedMessage) => {
+//     let actualMessage = await Loginmodal.secondOption.getText()
+//     expect(actualMessage).to.be.equals(expectedMessage)
+// });
+
+// Then(/^the third option is "(.*?)"$/, async (expectedMessage) => {
+//     let actualMessage = await Loginmodal.thirdOption.getText()
+//     expect(actualMessage).to.be.equals(expectedMessage)
+// });
+
+// When(/^the user await$/, async () => {
+//     await browser.sleep(1000)
+// });
