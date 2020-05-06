@@ -1,6 +1,6 @@
 Feature: Login-Modal
 
-    @mao
+    #@mao
     Scenario: Login-Modal
         Given the user is on the Falabella page
         When the user click on button Inicia Sesión

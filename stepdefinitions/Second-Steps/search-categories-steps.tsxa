@@ -1,5 +1,5 @@
 import { browser, ElementFinder } from "protractor";
-import {SearchPageObject } from "../pages/search-categories-page";
+import {SearchPageObject } from "../../pages/Second-page/search-categories-page";
 import { Then } from "cucumber";
 const { Given, When, setDefaultTimeout } = require("cucumber");
 import * as chai from 'chai'
@@ -26,7 +26,7 @@ When(/^the user click on button Samsung Watch$/, async () => {
     await search.samsungWatch.click()
 });
 
-When(/^the user click on picture Galaxy Watch Active 2 44 mm$/, async () => {
+When(/^the user click on picture SmartWatch Active 2 44mm$/, async () => {
     await search.active.click()
 });
 
