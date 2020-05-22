@@ -1,0 +1,27 @@
+import { browser, ElementFinder } from "protractor";
+import {misPedidosPageObject} from "../../pages/linio/pedidos.page";
+import { Then } from "cucumber";
+const { Given, When, setDefaultTimeout } = require("cucumber");
+import * as chai from 'chai'
+chai.use(require("chai-as-promised"))
+const expect = chai.expect;
+setDefaultTimeout(10000);
+
+let pedidomodal: misPedidosPageObject = new misPedidosPageObject();
+//Mappear pasos de los features
+
+Given(/^the user is on the profile page$/, async () => {
+    return await browser.get(misPedidosPageObject.url) ojo aca con esto que no debe ser una clase si no un parametro misPedidosPageObject
+});
+
+When(/^the user click on button Mis pedidos$/, async () => {
+    await pedidomodal.mispedidosButton.click()  
+});
+
+When(/^the user click on button Ver Pedido$/, async () => {
+    await pedidomodal.verpedidoButton.click()  
+});
+
+When(/^the user wait$/, async () => {
+    await browser.sleep(3000)
+});
