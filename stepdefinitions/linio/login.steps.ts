@@ -87,6 +87,59 @@ Then(/^the last option is "(.*?)"$/, async (expectedMessage) => {
     expect(actualMessage).to.contains(expectedMessage)
 });
 
+When(/^the user click on button cerrar Sesión$/, async () => {
+    await loginPage.logout.click()
+});
+
+//------------------------------------------------------------------------------
+Then(/^can be seen a Message with the text "(.*?)"$/, async (expectedMessage) => {
+    let actualMessage = await loginPage.invalidPassMessage.getText()
+    expect(actualMessage).to.be.equals(expectedMessage)
+});
+
+//---------------------------------------------------------------------------------
+When(/^the user click on button olvidé mi contraseña$/, async () => {
+    await loginPage.forgotPassword.click()
+});
+
+When(/the user enter his e-mail2 "(.*?)"$/, async (forgotEmail) => {
+    await loginPage.forgotEmail.sendKeys(forgotEmail)
+});
+
+When(/^the user click on button no soy un robot$/, async () => {
+    await loginPage.notRobot.click()
+});
+
+When(/^the user click on button restablecer contraseña$/, async () => {
+    await loginPage.recoverPass.click()
+});
+//--------------------------------------------------------------------------------
+
+When(/^the user click on button crear cuenta$/, async () => {
+    await loginPage.newAccount.click()
+});
+
+//--------------------------------------------------------------------------------
+When(/the user enter his name "(.*?)"$/, async (nameField) => {
+    await loginPage.nameField.sendKeys(nameField)
+});
+
+When(/the user enter his lastname "(.*?)"$/, async (lastNameField) => {
+    await loginPage.lastNameField.sendKeys(lastNameField)
+});
+
+When(/the user enter his new e-mail "(.*?)"$/, async (lastNameField) => {
+    await loginPage.lastNameField.sendKeys(lastNameField)
+});
+
+When(/the user enter his new password "(.*?)"$/, async (newPassword) => {
+    await loginPage.newPassword.sendKeys(newPassword)
+});
+
+When(/^the user click on button acepto terminos$/, async () => {
+    await loginPage.acceptTerms.click()
+});
+
 When(/^the user await$/, async () => {
     await browser.sleep(1000)
 });
