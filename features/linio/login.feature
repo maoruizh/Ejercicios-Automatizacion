@@ -1,6 +1,6 @@
 Feature: Login
 
-    @mao
+    #@mao
     Scenario: Login successful
         Given the user is on the Linio page
         When the user put Mouse over the Perfil Icon
@@ -12,9 +12,9 @@ Feature: Login
         And the user wait
 
         #Assertions
-        Then can be seen in the header a Message with the text "¡Hola Mao!"
+        Then can see in the header a Message with the text "¡Hola Mao!"
         Then the user should put Mouse over the Perfil Icon
-        And can be seen a table with some options
+        And can see a table with some options
         And the first option is "Mi cuenta"
         And the second option is "Mis reseñas"
         And the third option is "Mis pedidos"
@@ -24,7 +24,7 @@ Feature: Login
         And the user click on button cerrar Sesión
     #---------------------------------------------------------------------------------------
 
-    @mao
+    #@mao
     Scenario: login with a bad password
         Given the user is on the Linio page
         When the user put Mouse over the Perfil Icon
@@ -35,10 +35,10 @@ Feature: Login
         And the user wait
 
         #Assertions
-        Then can be seen a Message with the text "Nombre de usuario o contraseña inválidos."
+        Then can see a Message with the text "Nombre de usuario o contraseña inválidos."
     #------------------------------------------------------------------------------------------
 
-    @mao
+    #@mao
     Scenario: login forgot the password
         Given the user is on the Linio page
         When the user put Mouse over the Perfil Icon
@@ -49,11 +49,12 @@ Feature: Login
         And the user click on button restablecer contraseña
         And the user wait
 
-    #Assertions
-    #Then can be seen a Message with the text "Hemos enviado un enlace a tu email para restablecer la contraseña. Si no lo recibes en unos minutos, revisa tu carpeta de correo no deseado."
+        #Assertions
+        #Then can see a Message with the text "Hemos enviado un enlace a tu email para restablecer la contraseña. Si no lo recibes en unos minutos, revisa tu carpeta de correo no deseado."
+        #Este mensaje no lo puedo validar porque el captcha a veces pide escoger imagenes y cuando pasa eso no se como validarlo
     #------------------------------------------------------------------------------------------
 
-    @mao
+    #@mao
     Scenario: login with a bad e-mail
         Given the user is on the Linio page
         When the user put Mouse over the Perfil Icon
@@ -64,11 +65,11 @@ Feature: Login
         And the user wait
 
         #Assertions
-        Then can be seen a Message with the text "Nombre de usuario o contraseña inválidos."
-    #quisera validar el mensaje que sale cuando no se coloca el formato del correo correcto
+        Then can see a Message with the text "Nombre de usuario o contraseña inválidos."
+        #quisera validar el mensaje que sale cuando no se coloca el formato del correo correcto
     #------------------------------------------------------------------------------------------
 
-    @mao
+    #@mao
     Scenario: login without e-mail
         Given the user is on the Linio page
         When the user put Mouse over the Perfil Icon
@@ -81,7 +82,7 @@ Feature: Login
     #quisera validar el mensaje que sale cuando no se coloca el correo
     #------------------------------------------------------------------------------------------
 
-    @mao
+    #@mao
     Scenario: create new account
         Given the user is on the Linio page
         When the user put Mouse over the Perfil Icon

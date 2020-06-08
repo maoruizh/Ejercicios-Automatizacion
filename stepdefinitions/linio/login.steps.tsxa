@@ -17,7 +17,7 @@ Given(/^the user is on the Linio page$/, async () => {
 When(/^the user put Mouse over the Perfil Icon$/, async () => {
     const dropDown = await loginPage.perfilIcon;
     browser.actions().mouseMove(dropDown).perform();
-    await browser.sleep(3000);
+    await browser.sleep(5000);
 });
 
 When(/^the user click on button Inicia Sesión$/, async () => {
@@ -41,7 +41,7 @@ When(/^the user wait$/, async () => {
 });
 
 //Assertions
-Then(/^can be seen in the header a Message with the text "(.*?)"$/, async (expectedMessage) => {
+Then(/^can see in the header a Message with the text "(.*?)"$/, async (expectedMessage) => {
     let actualMessage = await loginPage.helloUser.getText()
     expect(actualMessage).to.be.equals(expectedMessage)
 });
@@ -52,7 +52,7 @@ When(/^the user should put Mouse over the Perfil Icon$/, async () => {
     await browser.sleep(3000);
 });
 
-Then(/^can be seen a table with some options$/, async () => {
+Then(/^can see a table with some options$/, async () => {
     let actualTable = await loginPage.table.isDisplayed()
     expect(actualTable).to.be.true
 });
@@ -92,12 +92,12 @@ When(/^the user click on button cerrar Sesión$/, async () => {
 });
 
 //------------------------------------------------------------------------------
-Then(/^can be seen a Message with the text "(.*?)"$/, async (expectedMessage) => {
+Then(/^can see a Message with the text "(.*?)"$/, async (expectedMessage) => {
     let actualMessage = await loginPage.invalidPassMessage.getText()
     expect(actualMessage).to.be.equals(expectedMessage)
 });
+//------------------------------------------------------------------------------
 
-//---------------------------------------------------------------------------------
 When(/^the user click on button olvidé mi contraseña$/, async () => {
     await loginPage.forgotPassword.click()
 });
