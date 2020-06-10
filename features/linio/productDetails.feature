@@ -2,7 +2,9 @@ Feature: Product Details
 
     @mao
     Scenario: Add to Cart
+
         Given the user is on the Linio page
+        And the user wait
         When the user click on an product
         And the user click on next image
         And the user click on next image

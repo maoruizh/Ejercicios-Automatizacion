@@ -20,7 +20,7 @@ export class ProductDetailsPageObject {
    
     constructor() {
         // Scenario: Add to Cart
-        this.product = $(".product-card.swiper-slide.swiper-slide-active[href='/p/tv-samsung-55-4k-uhd-smart-tv-55ru7100-n0tu1b']")
+        this.product = $(".product-card.swiper-slide [alt='TV Samsung 65\" 4K UHD Smart Tv 65RU7100']") //se una el backslash para que el sistema entineda que las comillas hacen parte del selector
         this.nextImage = $("#image-container .swiper-button-next")
         this.seeMore= $(".panel-footer.link-base-sm")
         this.seeLess= $("#panel-features .link-base-sm.panel-close-link")
