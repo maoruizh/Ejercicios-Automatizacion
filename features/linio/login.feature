@@ -1,52 +1,53 @@
 Feature: Login
 
-    #@mao
+    @mao
     Scenario: Login successful
-        Given the user is on the Linio page
-        When the user put Mouse over the Perfil Icon
-        When the user click on button Inicia Sesión
-        And the user enter his e-mail "maoruizh@gmail.com"
-        And the user enter his password "Linio19"
-        And the user click on button Iniciar Sesión segura
-        And the user put Mouse over the Perfil Icon
+        Given the user is on the "Login" page
+        When the user put mouse over the "profile Icon"
+        When the user click on "login"
+        And the user enter his "email Field" "maoruizh@gmail.com"
+        And the user enter his "password Field" "Linio19"
+        And the user click on "login Button"
+        And the user put mouse over the "profile Icon"
         And the user wait
 
         #Assertions
-        Then can see in the header a Message with the text "¡Hola Mao!"
-        Then the user should put Mouse over the Perfil Icon
-        And can see a table with some options
-        And the first option is "Mi cuenta"
-        And the second option is "Mis reseñas"
-        And the third option is "Mis pedidos"
-        And the fourth option is "Mis cupones"
-        And the fifth option is "Mis suscripciones"
-        And the last option is "Cerrar sesión"
-        And the user click on button cerrar Sesión
+        Then the user can see a message with the text "¡Hola Mao!" in "welcome message"
+        Then the user put mouse over the "profile Icon2"
+        And the user can see a table with "some options"
+        And the user can see a message with the text "Mi cuenta" in "My acount"
+        And the user can see a message with the text "Mis reseñas" in "My reviews"
+        And the user can see a message with the text "Mis pedidos" in "My orders"
+        And the user can see a message with the text "Mis cupones" in "My coupons"
+        And the user can see a message with the text "Mis suscripciones" in "My subscriptions"
+        And the user can see a message with the text "Cerrar sesión" in "Sign off"
+        And the user click on "Sign off"
     #---------------------------------------------------------------------------------------
 
-    #@mao
+    @mao
     Scenario: login with a bad password
-        Given the user is on the Linio page
-        When the user put Mouse over the Perfil Icon
-        When the user click on button Inicia Sesión
-        And the user enter his e-mail "maoruizh@gmail.com"
-        And the user enter his password "1234"
-        And the user click on button Iniciar Sesión segura
+        Given the user is on the "Login" page
+        When the user put mouse over the "profile Icon"
+        When the user click on "login"
+        And the user enter his "email Field" "maoruizh@gmail.com"
+        And the user enter his "password Field" "1234"
+        And the user click on "login Button"
         And the user wait
 
         #Assertions
-        Then can see a Message with the text "Nombre de usuario o contraseña inválidos."
+        Then the user can see a message with the text "No hemos podido iniciar sesión con tu cuenta en este momento. Por favor, intenta de nuevo más tarde." in "invalidPassMessage"  
     #------------------------------------------------------------------------------------------
 
-    #@mao
+    @mao
     Scenario: login forgot the password
-        Given the user is on the Linio page
-        When the user put Mouse over the Perfil Icon
-        When the user click on button Inicia Sesión
-        And the user click on button olvidé mi contraseña
-        And the user enter his e-mail2 "maoruizh@gmail.com"
-        And the user click on button no soy un robot
-        And the user click on button restablecer contraseña
+        Given the user is on the "Login" page
+        When the user put mouse over the "profile Icon"
+        When the user click on "login"
+        And the user click on "forgot Password"
+        And the user enter his "forgot Email" "maoruizh@gmail.com"
+        And the user wait
+        #And the user click on "not Robot" debi omitir este paso porque el selector esta dentro de un iframe y esa parte es mas compleja de automatizar
+        #And the user click on "recover Pass"
         And the user wait
 
         #Assertions
@@ -54,46 +55,47 @@ Feature: Login
         #Este mensaje no lo puedo validar porque el captcha a veces pide escoger imagenes y cuando pasa eso no se como validarlo
     #------------------------------------------------------------------------------------------
 
-    #@mao
+    @mao
     Scenario: login with a bad e-mail
-        Given the user is on the Linio page
-        When the user put Mouse over the Perfil Icon
-        When the user click on button Inicia Sesión
-        And the user enter his e-mail "maoruizh@mail.com"
-        And the user enter his password "Linio19"
-        And the user click on button Iniciar Sesión segura
+        Given the user is on the "Login" page
+        When the user put mouse over the "profile Icon"
+        When the user click on "login"
+        And the user enter his "email Field" "maoruizh@mail.com"
+        And the user enter his "password Field" "Linio19"
+        And the user click on "login Button"
         And the user wait
 
         #Assertions
-        Then can see a Message with the text "Nombre de usuario o contraseña inválidos."
+       Then the user can see a message with the text "No hemos podido iniciar sesión con tu cuenta en este momento. Por favor, intenta de nuevo más tarde." in "invalidPassMessage"
         #quisera validar el mensaje que sale cuando no se coloca el formato del correo correcto
     #------------------------------------------------------------------------------------------
 
-    #@mao
+    @mao
     Scenario: login without e-mail
-        Given the user is on the Linio page
-        When the user put Mouse over the Perfil Icon
-        When the user click on button Inicia Sesión
-        And the user enter his password "Linio19"
-        And the user click on button Iniciar Sesión segura
+        Given the user is on the "Login" page
+        When the user put mouse over the "profile Icon"
+        When the user click on "login"
+        And the user enter his "password Field" "Linio19"
+        And the user click on "login Button"
         And the user wait
 
     #Assertions
     #quisera validar el mensaje que sale cuando no se coloca el correo
     #------------------------------------------------------------------------------------------
 
-    #@mao
+    @mao
     Scenario: create new account
-        Given the user is on the Linio page
-        When the user put Mouse over the Perfil Icon
-        When the user click on button Inicia Sesión
-        When the user click on button crear cuenta
-        And the user enter his name "john"
-        And the user enter his lastname "ruiz"
-        And the user enter his new e-mail "jruiz@loggro.com"
-        And the user enter his new password "Linio1234"
-        And the user click on button acepto terminos
-        #And the user click on button completar registro
+        Given the user is on the "Login" page
+        When the user put mouse over the "profile Icon"
+        When the user click on "login"
+        When the user click on "new Account"
+        And the user enter his "name Field" "john"
+        And the user enter his "last Name Field" "ruiz"
+        And the user enter his "new Email" "jruiz@loggro.com"
+        And the user enter his "new Password" "Linio1234"
+        And the user click on "accept Terms"
+        #And the user click on button completar registro // no hace para no estar creando cuntas nuevas en cada prueba
+        And the user close page
         And the user wait
 
 #Assertions

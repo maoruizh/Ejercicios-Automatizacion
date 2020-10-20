@@ -1,8 +1,11 @@
 import { $, ElementFinder } from "protractor";
+const  camelcase = require("camelcase");
+
 //URL
 //Elementos de la pagina
 export class ProductDetailsPageObject {
-    static url = "https://www.linio.com.co/";
+    //static url = "https://www.linio.com.co/";
+    public url = "https://www.linio.com.co/";
 
     // Scenario: Add to Cart
     public product: ElementFinder;
@@ -20,13 +23,13 @@ export class ProductDetailsPageObject {
    
     constructor() {
         // Scenario: Add to Cart
-        this.product = $(".product-card.swiper-slide [alt='TV Samsung 65\" 4K UHD Smart Tv 65RU7100']") //se una el backslash para que el sistema entineda que las comillas hacen parte del selector
-        this.nextImage = $("#image-container .swiper-button-next")
+        this.product = $(".slider-wrapper [alt='Celular Xiaomi Redmi Note 8 64GB 4 RAM Negro']") //se usa el backslash \ para que el sistema entineda que las comillas hacen parte del selector
+        this.nextImage = $(".slider-next")
         this.seeMore= $(".panel-footer.link-base-sm")
         this.seeLess= $("#panel-features .link-base-sm.panel-close-link")
         this.productDetails= $("#panel-details")
         this.seeLess2= $("#panel-details .link-base-sm.panel-close-link")
-        this.increaseQuantity= $("#selected-option-product-quantity")
+        this.increaseQuantity= $(".select-dropdown.select-dropdown-product-quantity")
         this.quantity= $(".select-dropdown-list-item[data-value='2']")
         this.addToCart= $("#buy-now")
         
@@ -34,4 +37,13 @@ export class ProductDetailsPageObject {
         this.message = $(".added-product.highlight")
       
     }
+
+    getField(name : string): ElementFinder {
+        let field = this[camelcase(name)];
+        if (!field) {
+            throw "Field not found for name: " + name
+        }
+        return this[camelcase(name)];
+    }
 }
+
