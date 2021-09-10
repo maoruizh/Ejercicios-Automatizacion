@@ -35,7 +35,7 @@ Feature: Login
         And the user wait
 
         #Assertions
-        Then the user can see a message with the text "No hemos podido iniciar sesión con tu cuenta en este momento. Por favor, intenta de nuevo más tarde." in "invalidPassMessage"  
+        Then the user can see a message with the text "El correo electrónico o la contraseña son incorrectas. Vuelve a intentarlo." in "invalidPassMessage"  
     #------------------------------------------------------------------------------------------
 
     @mao
@@ -66,7 +66,7 @@ Feature: Login
         And the user wait
 
         #Assertions
-       Then the user can see a message with the text "No hemos podido iniciar sesión con tu cuenta en este momento. Por favor, intenta de nuevo más tarde." in "invalidPassMessage"
+       Then the user can see a message with the text "El correo electrónico o la contraseña son incorrectas. Vuelve a intentarlo." in "invalidPassMessage"
         #quisera validar el mensaje que sale cuando no se coloca el formato del correo correcto
     #------------------------------------------------------------------------------------------
 

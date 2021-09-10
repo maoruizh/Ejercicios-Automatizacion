@@ -23,7 +23,7 @@ export class ProductDetailsPageObject {
    
     constructor() {
         // Scenario: Add to Cart
-        this.product = $(".slider-wrapper [alt='Celular Xiaomi Redmi Note 8 64GB 4 RAM Negro']") //se usa el backslash \ para que el sistema entineda que las comillas hacen parte del selector
+        this.product = $(".slider-wrapper [alt='Celular Xiaomi Redmi Note 8 64GB 4 RAM Negro']")//se usa el backslash \ para que el sistema entineda que las comillas hacen parte del selector
         this.nextImage = $(".slider-next")
         this.seeMore= $(".panel-footer.link-base-sm")
         this.seeLess= $("#panel-features .link-base-sm.panel-close-link")
