@@ -5,6 +5,9 @@ Feature: Product Details
 
         Given the user is on the "Linio" page
         And the user wait
+        And the user enter his "search Field" "celulares xiaomi"
+        And the user click on "search button"
+        And the user wait
         When the user click on "product"
         And the user wait
         And the user click on "next image"
