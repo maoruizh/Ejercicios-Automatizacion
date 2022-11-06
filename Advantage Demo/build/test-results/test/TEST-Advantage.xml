@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Advantage" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-06T19:50:31" hostname="DESKTOP-SHN3JOM" time="51.568">
+<testsuite name="Advantage" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-06T22:24:53" hostname="DESKTOP-SHN3JOM" time="77.863">
   <properties/>
-  <testcase name="createUser" classname="Advantage" time="51.568"/>
+  <testcase name="createUser" classname="Advantage" time="77.863"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 51071
+  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 22236
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov 06, 2022 2:50:32 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+nov 06, 2022 5:24:54 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-[1667764270.498][WARNING]: Timed out connecting to Chrome, retrying...
-[1667764278.611][WARNING]: Timed out connecting to Chrome, retrying...
+[1667773559.203][WARNING]: Timed out connecting to Chrome, retrying...
+[1667773567.312][WARNING]: Timed out connecting to Chrome, retrying...
 ]]></system-err>
 </testsuite>
