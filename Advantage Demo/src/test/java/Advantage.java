@@ -1,6 +1,7 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -93,6 +94,9 @@ public class Advantage {
         driver.findElement(By.id("pay_now_btn_MasterCredit")).click();
         Thread.sleep(2000);
 
+        String ActualTitle = driver.findElement(By.xpath("//span[@class='roboto-regular ng-scope']")).getText();
+        String ExpectedTitle = "Thank you for buying with Advantage";
+        Assert.assertEquals(ExpectedTitle, ActualTitle);
     }
 
     @After
@@ -101,6 +105,12 @@ public class Advantage {
 
     }
 }
+/*
+    Then(/^I see Succesful Message with text "(.*?)"$/, async (expectedMessage) => {
+        let actualMessage = await addDoctor.message.getText()
+        expect(actualMessage).to.be.equals(expectedMessage)
+        });
+ */
 //hacer la tarea de web list para country
 //Buscar que es gradle y cual es la diferencia con maven
 //Buscar assertEquals(expected,actual);
