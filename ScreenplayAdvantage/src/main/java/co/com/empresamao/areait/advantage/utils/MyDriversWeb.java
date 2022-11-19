@@ -1,6 +1,5 @@
 package co.com.empresamao.areait.advantage.utils;
 
-import org.apache.groovy.json.internal.Chr;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -15,6 +14,10 @@ public class MyDriversWeb {
         driver = new ChromeDriver(options); // luego llamamos el objeto driver de la clase webdriver y lo instanciamos es decir, es crear una copia basada en un modelo
         driver.manage().window().maximize(); // luego llamamos el objeto driver de la clase webdriver y le aplicamos varios metodos por ejemplo manage().window().maximize() esto es metodo de manage que a su vez tiene otro método como .window() y a su vez otro sub método .maximize()
         return new MyDriversWeb();
+    }
 
+    public WebDriver inThePage(String url){
+        driver.get(url);
+        return driver;
     }
 }

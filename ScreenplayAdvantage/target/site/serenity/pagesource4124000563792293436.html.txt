@@ -1,0 +1,652 @@
+<html lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="css/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>&nbsp;Advantage Shopping</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <!--<script>-->
+        <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+                <!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');-->
+        <!--ga('create', 'UA-81334227-1', 'auto');ga('send', 'pageview');-->
+    <!--</script>-->
+
+<script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main.min" src="./main.min.js" style="color: rgb(0, 0, 0);"></script></head>
+
+<body data-ng-controller="mainCtrl as mainCtrl" class="ng-scope" style="left: 0px;">
+<!--<div id="team" data-ng-click="mainCtrl.closeImgTeam()">-->
+    <!--<div class="container">-->
+        <!--<div class="img">-->
+            <!--<div id="teamIdToAnimate" class="animated">-->
+                <!--<img src="../../css/images/Advantage_online_shopping_team.jpg" alt="team">-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="waitBackground_2">
+    <div>
+        <!--
+        <svg version="1.1" id="Layer_1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px"
+             width="250px" height="250px" viewBox="0 0 30 45" enable-background="new 0 0 45 45" xml:space="preserve">
+                <path fill="#54B3AD" d="M21,33h-6c-1.1,0-2-1.1-2-2.2V7h2.9c0.7,0,1.3,0.4,1.6,1.1l12.9,35.2c0.4,1,1.6,1.6,2.6,1.6h5L22,1.8
+                    C21.6,0.7,21.1,0,20,0H6v34.1c0,3.3,1.4,5.9,5,5.9h14l-1.3-5.6C23.4,33.4,22,33,21,33z"/>
+        </svg>-->
+    </div>
+</div>
+
+<div class="loader" style="display: none; opacity: 0;">
+    <div>
+        <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
+                    <stop stop-color="#54B3AD" stop-opacity="0" offset="0%"></stop>
+                    <stop stop-color="#54B3AD" stop-opacity=".631" offset="63.146%"></stop>
+                    <stop stop-color="#54B3AD" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+                <g transform="translate(1 1)">
+                    <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2">
+                        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s" repeatCount="indefinite"></animateTransform>
+                    </path>
+                    <circle fill="#54B3AD" cx="36" cy="18" r="1">
+                        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s" repeatCount="indefinite"></animateTransform>
+                    </circle>
+                </g>
+            </g>
+        </svg>
+    </div>
+</div>
+
+<login-modal><div class="PopUp" style="display: block;">
+    <div style="top: 5%;">
+
+        <div class="loader" style="display: none; opacity: 0;">
+            <div>
+                <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient x1="8.042%" y1="0%" x2="65.682%" y2="23.865%" id="a">
+                            <stop stop-color="#54B3AD" stop-opacity="0" offset="0%"></stop>
+                            <stop stop-color="#54B3AD" stop-opacity=".631" offset="63.146%"></stop>
+                            <stop stop-color="#54B3AD" offset="100%"></stop>
+                        </linearGradient>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <g transform="translate(1 1)">
+                            <path d="M36 18c0-9.94-8.06-18-18-18" id="Oval-2" stroke="url(#a)" stroke-width="2">
+                                <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s" repeatCount="indefinite"></animateTransform>
+                            </path>
+                            <circle fill="#54B3AD" cx="36" cy="18" r="1">
+                                <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="0.9s" repeatCount="indefinite"></animateTransform>
+                            </circle>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <div class="closeBtn loginPopUpCloseBtn"></div>
+
+        <div class="login ng-scope" ng-controller="userController">
+
+            <img src="../../css/images/logo.png">
+
+            <span class="facebook ng-scope" translate="FACEBOOK_SIGN_IN" data-ng-click="singWithFacebook()">SIGN IN WITH FACEBOOK</span>
+            <label id="signInResultMessage" class="or  center">OR</label>
+
+            <sec-form class="ng-isolate-scope secForm">
+
+                <sec-view a-hint="Username" a-do-not-show-info="true" a-star="false" sec-model="loginUser.loginUser" sec-require="mainCtrl.getRequire('User_name')" sec-name="username" class="ng-isolate-scope sec-view">
+                <div class="inputContainer ng-scope"><div class="hidden">Username</div><input name="username" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope in-focus"><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()" class="animated">Username</label></div><ul><li style="display: block; position: absolute; height: 0"><a></a></li></ul></sec-view>
+
+                <sec-view a-hint="Password" a-do-not-show-info="true" a-star="false" a-type="password" sec-model="loginUser.loginPassword" sec-require="mainCtrl.getRequire('Password')" sec-name="password" class="ng-isolate-scope sec-view">
+                <div class="inputContainer ng-scope"><div class="hidden">Password</div><input name="password" type="password" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope"><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()">Password</label></div><ul><li style="display: block; position: absolute; height: 0"><a></a></li></ul></sec-view>
+
+                <sec-view a-hint="Email" a-do-not-show-info="true" a-star="false" ng-show="mainCtrl.config.emailAddressInLogin" sec-disable-validation="!mainCtrl.config.emailAddressInLogin" sec-model="loginUser.email" sec-name="email" class="ng-isolate-scope sec-view ng-hide">
+                <div class="inputContainer ng-scope"><div class="hidden">Email</div><input name="email" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope"><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()">Email</label></div><ul></ul></sec-view>
+
+
+                <div class="left option " style="top: 20px">
+                    <input name="remember_me" type="checkbox" ng-model="mainCtrl.rememberMe" class="ng-pristine ng-untouched ng-valid">
+                    <span translate="REMEMBER_ME" class="ng-scope">REMEMBER ME</span>
+                </div>
+
+                <sec-sender class="roboto-medium ng-isolate-scope sec-sender" a-value="SIGN IN" sec-send="signIn(loginUser, mainCtrl.rememberMe)"><button id="sign_in_btnundefined" type="button" class="sec-sender-a ng-scope invalid" role="button" data-ng-click="senderCtrl.send()" disabled="">SIGN IN</button></sec-sender>
+
+
+            </sec-form>
+
+            <a href="javascript:void(0)" role="link" class="forgot-Passwowd ng-scope" translate="FORGOT_PASSWORD" data-ng-click="forgotPassword()">Forgot your password?</a>
+            <a href="javascript:void(0)" role="link" class="create-new-account ng-scope" translate="CREATE_NEW_ACCOUNT" data-ng-click="createNewAccount()">CREATE NEW ACCOUNT</a>
+
+        </div>
+    </div>
+
+</div></login-modal>
+
+<span class="mobileTitle">
+    <div class="mini-title" id="loginMobileMiniTitle" style="display: none;">
+        <label class="option ng-scope" translate="My_account" ng-click="accountSection()">My account</label>
+        <label class="option ng-scope" translate="My_Orders" ng-click="mobileRedirect('MyOrders')">My orders</label>
+        <label class="option ng-scope" translate="Sign_out" ng-click="signOut()">Sign out</label>
+    </div>
+</span>
+
+<span class="mobileTitle">
+    <div class="mini-title-help mini-title-help-mobile" id="helpMobileMiniTitle" style="display: none;">
+        <label class="option ng-scope" translate="ABOUT" ng-click="mobileRedirectHelp('about')">About</label>
+        <label class="option ng-scope" translate="AOS_VERSIONS" ng-click="mobileRedirectHelp('version')">AOS Versions</label>
+        <label class="option ng-scope" translate="CONFIG_TOOL" ng-click="openAdminClient()">Management Console</label>
+    </div>
+</span>
+
+<aside id="mobile-section" class="" style="left: -164px;">
+    <ul>
+        <li data-ng-click="mobileRedirect('default')">
+            <a href="javascript:void(0)" role="link" class="img">
+                <svg id="mobileHome" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" icon-home-svg-mobile="">
+	<path fill="#313131" d="M21,24H3V10l-1.7,1.4L0,9.8L12,0l12,9.8l-1.3,1.5L21,10V24z M16,22h3V8.3l-7-5.7L5,8.3V22h3v-8h8V22z M10,22 h4v-6h-4V22z"></path>
+</svg>
+            </a>
+        </li>
+        <li data-ng-click="mobileRedirect('shoppingCart')">
+            <a href="javascript:void(0)" role="link" class="img">
+                <svg id="mobileCart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" icon-cart-svg-mobile="">
+    <path fill="#313131" d="M9,20c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2C11,20.9,10.1,20,9,20z M19,20c-1.1,0-2,0.9-2,2
+        c0,1.1,0.9,2,2,2s2-0.9,2-2C21,20.9,20.1,20,19,20z M8.3,15h12.5L24,4H5.5L4.8,1H0v2h3.2l4,16H21v-2H8.8L8.3,15z M6,6h15.3l-2,7
+        H7.8L6,6z"></path>
+</svg>
+                <span class="cart ng-binding ng-hide" ng-show="(cart | productsCartCount) > 0">0</span>
+            </a>
+        </li>
+        <li class="pointer" data-ng-click="login('loginMobileMiniTitle')">
+            <a href="javascript:void(0)" role="link" class="img center">
+                <a title="USER" icon-user-svg-mobile="">
+    <svg id="mobileUser" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path fill="#313131" d="M12,13.6c3.3,0,5.9-3.1,5.9-6.8C17.9,3.1,15.3,0,12,0C8.7,0,6.1,3.1,6.1,6.8C6.1,10.6,8.7,13.6,12,13.6z
+             M12,2.1c2.1,0,3.8,2.1,3.8,4.7c0,2.6-1.7,4.7-3.8,4.7c-2.1,0-3.8-2.1-3.8-4.7C8.2,4.2,9.9,2.1,12,2.1z M20,14.3
+            c-0.4-0.4-1.1-0.3-1.5,0.1c-0.4,0.4-0.3,1.1,0.1,1.5c0.6,0.5,1.1,1.8,1.1,2.4c0,1.4-0.3,2.3-0.8,2.8C18,22,16,22,13.3,21.9
+            c-0.9,0-1.8,0-2.7,0C8,22,6,22,5.1,21.1c-0.5-0.5-0.8-1.4-0.8-2.8c0-0.9,0.3-1.7,1-2.5c0.4-0.4,0.3-1.1-0.1-1.4
+            C4.7,14,4.1,14,3.7,14.5c-1,1.2-1.5,2.4-1.5,3.8c0,1.9,0.5,3.3,1.4,4.2c1.5,1.5,4,1.5,7.1,1.5c0.9,0,1.8,0,2.7,0
+            c0.4,0,0.8,0,1.2,0c2.5,0,4.6-0.2,5.9-1.5c0.9-0.9,1.4-2.3,1.4-4.2C21.8,17.2,21.1,15.3,20,14.3z"></path>
+    </svg>
+</a>
+                <span data-ng-show="userCookie.response" class="hi-user ng-binding ng-hide"></span>
+            </a>
+        </li>
+    </ul>
+</aside>
+
+<!-- end mobile slider -->
+
+
+
+
+<!-- navigation -->
+
+<header ng-show="welcome" class="">
+    <nav>
+        <ul class="roboto-light desktop-handler">
+            <li>
+                <a id="helpLink" href="javascript:void(0)" role="link" class="img" data-ng-click="help('helpMiniTitle')" data-ng-mouseenter="miniTitleIn('helpMiniTitle')" data-ng-mouseleave="miniTitleOut('helpMiniTitle')">
+
+                    <img src="../../css/images/Down_arrow.svg" width="12px" ;="" height="7px">
+                    <svg id="menuHelp" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" icon-help-svg="">
+    <path fill="#313131" d="M11,18 L13,18 L13,16 L11,16 L11,18 Z M12,2 C6.48,2 2,6.48 2,12 C2,17.52 6.48,22 12,22 C17.52,22 22,17.52 22,12 C22,6.48 17.52,2 12,2 Z M12,20 C7.59,20 4,16.41 4,12 C4,7.59 7.59,4 12,4 C16.41,4 20,7.59 20,12 C20,16.41 16.41,20 12,20 Z M12,6 C9.79,6 8,7.79 8,10 L10,10 C10,8.9 10.9,8 12,8 C13.1,8 14,8.9 14,10 C14,12 11,11.75 11,15 L13,15 C13,12.75 16,12.5 16,10 C16,7.79 14.21,6 12,6 Z"></path>
+</svg>
+
+                    <div id="helpMiniTitle" class="mini-title-help" style="display: none;">
+                        <label class="option roboto-medium ng-scope" translate="ABOUT" ng-click="mobileRedirectHelp('about')" href="javascript:void(0)" role="link">About</label>
+                        <label class="option ng-scope" translate="AOS_VERSIONS" ng-click="mobileRedirectHelp('version')" href="javascript:void(0)" role="link">AOS Versions</label>
+                        <label class="option ng-scope" translate="CONFIG_TOOL" ng-click="openAdminClient()" href="javascript:void(0)" role="link">Management Console</label>
+                    </div>
+                </a>
+            </li>
+            <li data-ng-mouseenter="enterCart()" data-ng-mouseleave="leaveCart()">
+                <a id="shoppingCartLink" aria-label="ShoppingCart" class="img" href="#/shoppingCart" role="link">
+                    <svg id="menuCart" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" icon-cart-svg="">
+    <path fill="#313131" d="M9,20c-1.1,0-2,0.9-2,2c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2C11,20.9,10.1,20,9,20z M19,20c-1.1,0-2,0.9-2,2
+        c0,1.1,0.9,2,2,2s2-0.9,2-2C21,20.9,20.1,20,19,20z M8.3,15h12.5L24,4H5.5L4.8,1H0v2h3.2l4,16H21v-2H8.8L8.3,15z M6,6h15.3l-2,7
+        H7.8L6,6z"></path>
+</svg>
+                    <span class="cart ng-binding ng-hide" ng-show="(cart | productsCartCount) > 0">0</span>
+                </a>
+                <ul>
+                    <li style="position: relative; background-color: white">
+                        <tool-tip-cart id="toolTipCart" style="display: none;"><div>
+    <div ng-hide="cart.productsInCart.length > 0" class="emptyCart" data-ng-click="redirect('/shoppingCart')">
+        <label class="center items roboto-bold ng-binding"> ITEMS
+            <span class="roboto-regular">(0)</span>
+        </label>
+        <label class="center roboto-medium ng-scope" translate="Your_shopping_cart_is_empty">Your shopping cart is empty</label>
+    </div>
+    <table ng-show="cart.productsInCart.length > 0" class="ng-hide">
+        <tbody>
+            <!-- ngRepeat: product in cart.productsInCart track by $index -->
+        </tbody>
+        <tfoot data-ng-click="redirect('/shoppingCart')">
+            <tr>
+                <td colspan="2">
+                    <span class="roboto-medium ng-binding">TOTAL
+                        <label class="roboto-regular ng-binding">(0 Item)</label>
+                    </span>
+                </td>
+                <td>
+                    <span class="roboto-medium cart-total ng-binding">$0.00</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button id="checkOutPopUp" name="check_out_btn" role="button" class="roboto-medium ng-binding" data-ng-click="checkout($event)">CHECKOUT  ($0.00)</button>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</tool-tip-cart>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a id="menuUserLink" aria-label="UserMenu" href="javascript:void(0)" role="link" class="img" data-ng-click="login('loginMiniTitle')" data-ng-mouseenter="miniTitleIn('loginMiniTitle')" data-ng-mouseleave="miniTitleOut('loginMiniTitle')">
+                    <span data-ng-show="userCookie.response" class="hi-user containMiniTitle ng-binding ng-hide"></span><a id="hrefUserIcon" title="USER" icon-user-svg="">
+    <svg id="menuUser" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path id="menuUserSVGPath" fill="#313131" d="M12,13.6c3.3,0,5.9-3.1,5.9-6.8C17.9,3.1,15.3,0,12,0C8.7,0,6.1,3.1,6.1,6.8C6.1,10.6,8.7,13.6,12,13.6z
+             M12,2.1c2.1,0,3.8,2.1,3.8,4.7c0,2.6-1.7,4.7-3.8,4.7c-2.1,0-3.8-2.1-3.8-4.7C8.2,4.2,9.9,2.1,12,2.1z M20,14.3
+            c-0.4-0.4-1.1-0.3-1.5,0.1c-0.4,0.4-0.3,1.1,0.1,1.5c0.6,0.5,1.1,1.8,1.1,2.4c0,1.4-0.3,2.3-0.8,2.8C18,22,16,22,13.3,21.9
+            c-0.9,0-1.8,0-2.7,0C8,22,6,22,5.1,21.1c-0.5-0.5-0.8-1.4-0.8-2.8c0-0.9,0.3-1.7,1-2.5c0.4-0.4,0.3-1.1-0.1-1.4
+            C4.7,14,4.1,14,3.7,14.5c-1,1.2-1.5,2.4-1.5,3.8c0,1.9,0.5,3.3,1.4,4.2c1.5,1.5,4,1.5,7.1,1.5c0.9,0,1.8,0,2.7,0
+            c0.4,0,0.8,0,1.2,0c2.5,0,4.6-0.2,5.9-1.5c0.9-0.9,1.4-2.3,1.4-4.2C21.8,17.2,21.1,15.3,20,14.3z"></path>
+    </svg>
+</a>
+                    <div class="mini-title" id="loginMiniTitle" style="display: none;">
+                        <label class="option roboto-medium ng-scope" translate="My_account" ng-click="accountSection()" href="javascript:void(0)" role="link">My account</label>
+                        <label class="option ng-scope" translate="My_Orders" ng-click="mobileRedirect('MyOrders')" href="javascript:void(0)" role="link">My orders</label>
+                        <label class="option roboto-medium ng-scope" translate="Sign_out" ng-click="signOut($event)" href="javascript:void(0)" role="link">Sign out</label>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="img">
+                    <div id="searchSection" data-ng-mouseenter="allowClosing = false" data-ng-mouseleave="allowClosingLeave()" data-ng-click="closeSearchSection()" tool-tip-search="">
+
+    <div id="input" data-ng-click="$event.stopPropagation()">
+        <div id="search">
+            <a title="SEARCH">
+                <svg id="menuSearch" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" icon-search-svg="" data-ng-click="openSearchProducts()">
+<path fill="#313131" d="M23.7,22l-6.8-5.6c0,0-0.1,0-0.1-0.1c3.1-3.8,2.9-9.4-0.6-12.9c-1.8-1.8-4.2-2.8-6.7-2.8
+	c-2.5,0-4.9,1-6.7,2.8c-3.7,3.7-3.7,9.8,0,13.6c1.8,1.8,4.2,2.8,6.7,2.8c2.3,0,4.4-0.8,6.1-2.2c0,0,0,0.1,0.1,0.1l6.8,5.6
+	c0.2,0.2,0.4,0.3,0.6,0.3c0.2,0,0.4-0.1,0.6-0.3C24.1,22.9,24.1,22.3,23.7,22z M9.5,17.9c-2.1,0-4-0.8-5.5-2.3c-3-3.1-3-8,0-11.1
+	c1.5-1.5,3.4-2.3,5.5-2.3c2.1,0,4,0.8,5.5,2.3c3,3.1,3,8,0,11.1C13.5,17.1,11.6,17.9,9.5,17.9z"></path>
+</svg>
+            </a>
+            <div class="autoCompleteCover" style="width: 0px; opacity: 0.5; margin: 0px;">
+                <input id="autoComplete" type="text" class="roboto-regular ng-pristine ng-untouched ng-valid" placeholder="Search AdvantageOnlineShopping.com" data-ng-keypress="checkEnterKey($event)" data-ng-model="autoCompleteValue" data-ng-keyup="runAutocomplete()">
+
+                <div data-ng-click="closeSearchForce()" style="position: absolute; right: 0; top:0">
+                    <img src="../../css/images/closeDark.png" style="width:20px; height:20px; padding: 12px 0">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="output" data-ng-show="autoCompleteResult.length > 0" class="ng-hide">
+        <div class="searchPopUp" data-ng-click="$event.stopPropagation()">
+            <div class="categories">
+                <h3 class="roboto-medium ng-scope" translate="CATEGORIES" data-ng-mouseenter="searchByCategoryId(null, '')">CATEGORIES</h3>
+                <!-- ngRepeat: result in autoCompleteResult -->
+            </div>
+            <div class="top6Products">
+                <h3 class="roboto-medium ng-binding">TOP RESULTS FOR: ""
+                    <p style="font-size: 11px !important; font-weight: 300 !important;" class="ng-binding">  </p>
+                </h3>
+                <a href="#/search/?viewAll=" translate="View_All" class="roboto-medium viewAll ng-scope">View All</a>
+                <!-- ngRepeat: product in [] | filterFullArrayforAutoComplate:autoCompleteResult:categoryFilter -->
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+                </a>
+            </li>
+            <li class="nav-li-Links">
+                <a href="javascript:void(0)" role="link" ng-click="gotoElement('contact_us')" class="menu navLinks roboto-regular ng-scope" translate="CONTACT_US" style="display: block; opacity: 1;">CONTACT US</a>
+            </li>
+            <li class="nav-li-Links">
+                <a href="javascript:void(0)" role="link" class="menu navLinks roboto-regular ng-scope" ng-click="gotoElement('popular_items')" translate="POPULAR_ITEMS" style="display: block; opacity: 1;">POPULAR ITEMS</a>
+            </li>
+            <li class="nav-li-Links">
+                <a href="javascript:void(0)" role="link" class="menu navLinks roboto-regular ng-scope" ng-click="gotoElement('special_offer_items')" translate="SPACIAL_OFFER" style="display: block; opacity: 1;">SPECIAL OFFER</a>
+            </li>
+            <li class="nav-li-Links">
+                <a href="javascript:void(0)" role="link" class="menu navLinks roboto-regular ng-scope" ng-click="gotoElement('our_products')" translate="OUR_PRODUCTS" style="display: block; opacity: 1;">OUR PRODUCTS</a>
+            </li>
+
+        </ul>
+        <div class="logo">
+            <a href="#/" role="link" ng-click="go_up()">
+                <!--<img src="css/images/logo.png"/>-->
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 30 45" enable-background="new 0 0 45 45" xml:space="preserve">
+                    <path fill="#54B3AD" d="M21,33h-6c-1.1,0-2-1.1-2-2.2V7h2.9c0.7,0,1.3,0.4,1.6,1.1l12.9,35.2c0.4,1,1.6,1.6,2.6,1.6h5L22,1.8
+                        C21.6,0.7,21.1,0,20,0H6v34.1c0,3.3,1.4,5.9,5,5.9h14l-1.3-5.6C23.4,33.4,22,33,21,33z"></path>
+                </svg>
+                <span class="roboto-medium ng-binding">dvantage</span>
+                <span class="logoDemo roboto-light ng-binding">DEMO</span>
+            </a>
+
+            <div id="mobile-btn" class="mobile-btn-handler" ng-click="openMobileSection()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <div id="toast-container" ng-class="[config.position, config.animation]" toaster-options="{'time-out': 5000, }" class="toast-top-right"><!-- ngRepeat: toaster in toasters --></div>
+</header>
+
+<!-- end navigation " ng-show="cartCount != 0 -->
+
+<!-- uiView:  --><div class="uiview ng-scope" ui-view="" style=""><div id="scrollToTop" class="ng-scope">
+    <img name="go_up_btn" src="css/images/GoUp.png" alt="GO UP">
+
+    <p translate="GO_UP" class="ng-scope">GO UP</p>
+</div>
+<section class="ng-scope">
+
+    <!--  five pictures  -->
+    <article id="our_products">
+
+        <div id="mobileSearch" mobile-search="" class="">
+    <input name="mobile_search" type="text" class="roboto-medium ng-pristine ng-untouched ng-valid" placeholder="Search" data-ng-keypress="checkEnterKey($event)" data-ng-model="autoCompleteValue" data-ng-keyup="runAutocomplete()">
+    <svg id="menuSearch" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve" class="img" icon-search-svg="" data-ng-click="goToCategoryPage()">
+<path fill="#313131" d="M23.7,22l-6.8-5.6c0,0-0.1,0-0.1-0.1c3.1-3.8,2.9-9.4-0.6-12.9c-1.8-1.8-4.2-2.8-6.7-2.8
+	c-2.5,0-4.9,1-6.7,2.8c-3.7,3.7-3.7,9.8,0,13.6c1.8,1.8,4.2,2.8,6.7,2.8c2.3,0,4.4-0.8,6.1-2.2c0,0,0,0.1,0.1,0.1l6.8,5.6
+	c0.2,0.2,0.4,0.3,0.6,0.3c0.2,0,0.4-0.1,0.6-0.3C24.1,22.9,24.1,22.3,23.7,22z M9.5,17.9c-2.1,0-4-0.8-5.5-2.3c-3-3.1-3-8,0-11.1
+	c1.5-1.5,3.4-2.3,5.5-2.3c2.1,0,4,0.8,5.5,2.3c3,3.1,3,8,0,11.1C13.5,17.1,11.6,17.9,9.5,17.9z"></path>
+</svg>
+</div>
+
+        <div class="container ">
+
+            <div class="rowSection">
+                <div id="speakersImg" aria-label="SpeakersCategory" ng-click="redirect('/category/' + categories[3].categoryName + '/' + categories[3].categoryId)" role="link" href="javascript:void(0)" class="SpeakersImg categoryCell" a-sec-back-img="speakers" a-slow-page="false" style="background-image: url(&quot;catalog/fetchImage?image_id=speakers&quot;);">
+                    <div class="shop_now_slider">
+                        <span id="speakersTxt" aria-label="SpeakersCategoryTxt" class="shop_now roboto-bold ng-binding" role="link" href="javascript:void(0)">SPEAKERS</span>
+                        <label id="speakersLink" class="shop_nowSub roboto-regular ng-scope" translate="Shop_Now">Shop Now</label>
+                    </div>
+                </div>
+                <div id="tabletsImg" aria-label="TabletsCategory" ng-click="redirect('/category/' + categories[2].categoryName + '/' + categories[2].categoryId)" role="link" href="javascript:void(0)" a-sec-back-img="tablets" class="categoryCell" style="background-image: url(&quot;catalog/fetchImage?image_id=tablets&quot;);">
+                    <div class="shop_now_slider" aria-label="TabletsCategoryTxt">
+                        <span id="tabletsTxt" aria-label="TabletsCategoryTxt" class="shop_now roboto-bold ng-binding" role="link" href="javascript:void(0)">TABLETS</span>
+                        <label id="tabletsLink" class="shop_nowSub roboto-regular ng-scope" translate="Shop_Now">Shop Now</label>
+                    </div>
+                </div>
+                <div class="emptyCell">
+                </div>
+            </div>
+
+
+            <div class="rowSection">
+                <div id="laptopsImg" aria-label="LaptopsCategory" ng-click="redirect('/category/' + categories[0].categoryName + '/' + categories[0].categoryId)" class="laptopImg categoryCell" role="link" href="javascript:void(0)" a-sec-back-img="laptops" style="background-image: url(&quot;catalog/fetchImage?image_id=laptops&quot;);">
+                    <div class="shop_now_slider">
+                        <span id="laptopsTxt" aria-label="LaptopsCategoryTxt" class="shop_now roboto-bold ng-binding" role="link" href="javascript:void(0)">LAPTOPS</span>
+                        <label id="laptopsLink" class="shop_nowSub roboto-regular ng-scope" translate="Shop_Now">Shop Now</label>
+                    </div>
+                </div>
+                <div id="miceImg" aria-label="MiceCategory" ng-click="redirect('/category/' + categories[4].categoryName + '/' + categories[4].categoryId)" class="miceImg categoryCell" role="link" href="javascript:void(0)" a-sec-back-img="mice" style="background-image: url(&quot;catalog/fetchImage?image_id=mice&quot;);">
+                    <div class="shop_now_slider">
+                        <span id="miceTxt" aria-label="MiceCategoryTxt" class="shop_now roboto-bold ng-binding" role="link" href="javascript:void(0)">MICE</span>
+                        <label id="miceLink" class="shop_nowSub roboto-regular ng-scope" translate="Shop_Now">Shop Now</label>
+                    </div>
+                </div>
+                <div id="headphonesImg" aria-label="HeadphonesCategory" ng-click="redirect('/category/' + categories[1].categoryName + '/' + categories[1].categoryId)" class="twoRows categoryCell" role="link" href="javascript:void(0)" a-sec-back-img="headphones" style="background-image: url(&quot;catalog/fetchImage?image_id=headphones&quot;);">
+                    <div class="shop_now_slider">
+                        <span id="headphonesTxt" aria-label="HeadphonesCategoryTxt" class="shop_now roboto-bold ng-binding" role="link" href="javascript:void(0)">HEADPHONES</span>
+                        <label id="headphonesLink" class="shop_nowSub roboto-regular ng-scope" translate="Shop_Now">Shop Now</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- end five pictures -->
+
+
+    <!-- SPACIAL OFFER -->
+    <article id="special_offer_items">
+        <h3 class="roboto-regular center ng-scope" translate="SPACIAL_OFFER">SPECIAL OFFER</h3>
+        <div>
+            <div id="img-special-offer">
+                <figure>
+                    <img src="css/images/Special-offer.jpg" alt="Special-offer">
+                </figure>
+            </div>
+            <div id="div-special-offer">
+                <div>
+                    <span class="roboto-light ng-binding"> EXPLORE THE NEW DESIGN </span>
+
+                    <h1 class="roboto-thin ng-binding"> HP Pavilion 15z Touch Laptop </h1>
+
+                    <p class="ng-binding"> Supremely thin, yet incredibly durable </p>
+                    <a href="#/product/3">
+                        <button id="see_offer_btn" translate="SEE_OFFER" role="button" class="ng-scope">SEE OFFER</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+    <!-- end SPACIAL OFFER -->
+
+
+    <!-- check directive -->
+
+
+    <!-- slider -->
+    <article id="slider_explore_now">
+        <div class="slider">
+            <div class="slider-length transition">
+                <!-- ngRepeat: img in images --><div ng-repeat="img in images" class="imgSection ng-scope">
+                    <div class="imgContainer">
+                        <img data-ng-src="../../css/images/Banner1.jpg" ng-click="redirect('/category/' + categories[img.categoryId].categoryId)" src="../../css/images/Banner1.jpg">
+                    </div>
+                    <div class="container">
+                        <h2 ng-bind-html="img.message | trustHtml" class="roboto-light ng-binding">ALL YOU WANT FROM A TABLET</h2>
+                        <button name="explore_now_btn" ng-click="redirect('/category/' + categories[img.categoryId].categoryName + '/' + categories[img.categoryId].categoryId)" translate="EXPLORE_NOW" role="button" class="ng-scope">EXPLORE NOW</button>
+                    </div>
+                </div><!-- end ngRepeat: img in images --><div ng-repeat="img in images" class="imgSection ng-scope">
+                    <div class="imgContainer">
+                        <img data-ng-src="../../css/images/Banner2.jpg" ng-click="redirect('/category/' + categories[img.categoryId].categoryId)" src="../../css/images/Banner2.jpg">
+                    </div>
+                    <div class="container">
+                        <h2 ng-bind-html="img.message | trustHtml" class="roboto-light ng-binding">EXPLORE OUR LATEST <br>INNOVATIVE PRODUCTS</h2>
+                        <button name="explore_now_btn" ng-click="redirect('/category/' + categories[img.categoryId].categoryName + '/' + categories[img.categoryId].categoryId)" translate="EXPLORE_NOW" role="button" class="ng-scope">EXPLORE NOW</button>
+                    </div>
+                </div><!-- end ngRepeat: img in images --><div ng-repeat="img in images" class="imgSection ng-scope">
+                    <div class="imgContainer">
+                        <img data-ng-src="../../css/images/Banner3.jpg" ng-click="redirect('/category/' + categories[img.categoryId].categoryId)" src="../../css/images/Banner3.jpg">
+                    </div>
+                    <div class="container">
+                        <h2 ng-bind-html="img.message | trustHtml" class="roboto-light ng-binding">START EXPLORING HP NOTEBOOKS</h2>
+                        <button name="explore_now_btn" ng-click="redirect('/category/' + categories[img.categoryId].categoryName + '/' + categories[img.categoryId].categoryId)" translate="EXPLORE_NOW" role="button" class="ng-scope">EXPLORE NOW</button>
+                    </div>
+                </div><!-- end ngRepeat: img in images -->
+                <div class="imgSection">
+                    <div class="imgContainer">
+                        <img data-ng-src="../../css/images/Banner1.jpg" ng-click="redirect('/category/' + categories[img.categoryId].categoryName + '/' + categories[0].categoryId)" src="../../css/images/Banner1.jpg">
+                    </div>
+                    <div class="container">
+                        <h2 class="roboto-light ng-binding">ALL YOU WANT FROM A TABLET</h2>
+                        <button name="explore_now_btn" ng-click="redirect('/category/' + categories[img.categoryId].categoryName + '/' + categories[0].categoryId)" class="white ng-scope" translate="EXPLORE_NOW" role="button">EXPLORE NOW</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-steps">
+                <!-- ngRepeat: img in images --><span href="javascript:void(0)" role="link" ng-repeat="img in images" ng-class="{selected : (true)}" class="ng-scope selected"></span><!-- end ngRepeat: img in images --><span href="javascript:void(0)" role="link" ng-repeat="img in images" ng-class="{selected : (false)}" class="ng-scope"></span><!-- end ngRepeat: img in images --><span href="javascript:void(0)" role="link" ng-repeat="img in images" ng-class="{selected : (false)}" class="ng-scope"></span><!-- end ngRepeat: img in images -->
+            </div>
+        </div>
+    </article>
+    <!-- end slider -->
+
+
+    <!-- POPULAR ITEMS
+    <popular-items-drtv popular-products="popularProducts"></popular-items-drtv>
+    -->
+
+    <article id="popular_items">
+        <h3 class="roboto-regular center ng-scope" translate="POPULAR_ITEMS">POPULAR ITEMS</h3>
+
+        <div class="grid-table center">
+            <!-- ngRepeat: product in popularProducts --><!-- ngIf: popularProducts.length > 0 --><div name="popular_item_16" ng-repeat="product in popularProducts" ng-if="popularProducts.length > 0" class="ng-scope">
+                <figure>
+                    <img name="popular_item_16_img" data-ng-src="css/images/Popular-item3.jpg" alt="Special-offer" href="javascript:void(0)" role="link" src="css/images/Popular-item3.jpg">
+                </figure>
+                <p name="popular_item_16_name" class="center productName roboto-medium ng-binding">HP ELITEPAD 1000 G2 TABLET</p>
+                <a href="#/product/16" role="link">
+                    <label id="details_16" class="shop_nowSub viewDetail ng-scope" translate="View_details">View Details</label>
+                </a>
+            </div><!-- end ngIf: popularProducts.length > 0 --><!-- end ngRepeat: product in popularProducts --><!-- ngIf: popularProducts.length > 0 --><div name="popular_item_10" ng-repeat="product in popularProducts" ng-if="popularProducts.length > 0" class="ng-scope">
+                <figure>
+                    <img name="popular_item_10_img" data-ng-src="css/images/Popular-item2.jpg" alt="Special-offer" href="javascript:void(0)" role="link" src="css/images/Popular-item2.jpg">
+                </figure>
+                <p name="popular_item_10_name" class="center productName roboto-medium ng-binding">HP ELITEBOOK FOLIO</p>
+                <a href="#/product/10" role="link">
+                    <label id="details_10" class="shop_nowSub viewDetail ng-scope" translate="View_details">View Details</label>
+                </a>
+            </div><!-- end ngIf: popularProducts.length > 0 --><!-- end ngRepeat: product in popularProducts --><!-- ngIf: popularProducts.length > 0 --><div name="popular_item_21" ng-repeat="product in popularProducts" ng-if="popularProducts.length > 0" class="ng-scope">
+                <figure>
+                    <img name="popular_item_21_img" data-ng-src="css/images/Popular-item1.jpg" alt="Special-offer" href="javascript:void(0)" role="link" src="css/images/Popular-item1.jpg">
+                </figure>
+                <p name="popular_item_21_name" class="center productName roboto-medium ng-binding">HP ROAR PLUS WIRELESS SPEAKER</p>
+                <a href="#/product/21" role="link">
+                    <label id="details_21" class="shop_nowSub viewDetail ng-scope" translate="View_details">View Details</label>
+                </a>
+            </div><!-- end ngIf: popularProducts.length > 0 --><!-- end ngRepeat: product in popularProducts -->
+        </div>
+    </article>
+    <!-- end POPULAR ITEMS -->
+
+
+    <article id="contact_us">
+
+        <div data-ng-hide="supportSuccess" class="">
+
+            <div id="supportCover">
+
+                <div>
+
+                    <div name="chat_with_us" class="chat" data-ng-click="openChat()">
+
+                        <div>
+                            <img id="chatLogo" src="../../css/images/chat_logo.png" alt="chat logo">
+                            <label class="roboto-bold ng-scope" translate="CHAT_WITH_US">CHAT WITH US</label>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div>
+
+                    <h1 class="roboto-bold contact_us ng-scope" translate="CONTACT_US">CONTACT US</h1>
+
+                    <sec-form class="ng-isolate-scope secForm">
+
+                        <div class="splitter">
+                            <div class="inputMargin">
+                                <sec-view a-hint="Category" a-hint-description="ContactUs" a-type="select" a-show="categoryName" sec-select-options="categories" sec-model="categories.category" sec-select-change="categoryChange(value)" class="ng-isolate-scope sec-view">
+                                <div class="inputContainer ng-scope"><div class="hidden">Category</div><select name="categoryListboxContactUs" role="listbox" ng-model="secModel" ng-options="c as c.categoryName for c in secSelectOptions" style="background: transparent;" class="ng-pristine ng-untouched ng-valid ng-scope"><option value="" selected="selected" class=""></option><option label="Laptops" value="object:59">Laptops</option><option label="Headphones" value="object:60">Headphones</option><option label="Tablets" value="object:61">Tablets</option><option label="Speakers" value="object:62">Speakers</option><option label="Mice" value="object:63">Mice</option></select><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()" class="animated" style="z-index: -10;">Category</label></div><ul></ul></sec-view>
+                                <sec-view a-hint="Product" a-hint-description="ContactUs" a-type="select" a-show="productName" sec-model="supportModel.product" sec-select-options="products" sec-select-change="productChange(value)" class="ng-isolate-scope sec-view">
+                                <div class="inputContainer ng-scope"><div class="hidden">Product</div><select name="productListboxContactUs" role="listbox" ng-model="secModel" ng-options="c as c.productName for c in secSelectOptions" style="background: transparent;" class="ng-pristine ng-untouched ng-valid ng-scope"><option value="" selected="selected" class=""></option></select><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()" class="animated" style="z-index: -10;">Product</label></div><ul></ul></sec-view>
+                                <sec-view a-hint="Email" a-hint-description="ContactUs" sec-model="supportModel.email" sec-require="mainCtrl.getRequire('Email')" class="ng-isolate-scope sec-view">
+                                <div class="inputContainer ng-scope"><span class="star">*</span><div class="hidden">Email</div><input name="emailContactUs" type="text" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope"><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()">Email</label></div><ul><li style="display: block; position: absolute; height: 0"><a></a></li></ul></sec-view>
+                            </div>
+                        </div>
+                        <div class="splitter">
+                            <div class="smollPadding  margin-right">
+                                <label class="Subject ng-binding"><span class="star">*</span> Subject</label>
+
+                                <sec-view class="textarea ng-isolate-scope sec-view" a-hint="subjectTextarea" a-hint-description="ContactUs" a-type="textarea" a-star="false" sec-model="supportModel.subject" sec-require="mainCtrl.getRequire('Email')">
+                                <div class="inputContainer ng-scope" style="padding-top: 10px; height: auto; margin: 0px;"><div class="hidden">subjectTextarea</div><textarea name="subjectTextareaContactUs" data-ng-model="secModel" class="ng-pristine ng-untouched ng-valid ng-scope"></textarea><label data-ng-click="labelClicked()" data-ng-mouseout="labelOut()" class="checkboxText roboto-lightanimated"></label></div><ul><li style="display: block; position: absolute; height: 0"><a></a></li></ul></sec-view>
+
+                                <sec-sender a-value="SEND" sec-send="sendSupportEmail()" class="ng-isolate-scope sec-sender"><button id="send_btnundefined" type="button" class="sec-sender-a ng-scope invalid" role="button" data-ng-click="senderCtrl.send()" disabled="">SEND</button></sec-sender>
+
+                            </div>
+                        </div>
+
+                        <label class=" invalid center">  </label>
+
+                    </sec-form>
+                </div>
+            </div>
+        </div>
+
+        <div id="registerSuccessCover" data-ng-show="supportSuccess" class="ng-hide">
+            <div class="center">
+                <p class="roboto-regular successMessage ng-binding"></p>
+                <br>
+                <a class="a-button ng-binding" href="#/" ng-click="continueShopping()"> CONTINUE SHOPPING </a>
+            </div>
+        </div>
+    </article>
+    <!-- ngIf: mainCtrl.config.slowPage -->
+
+</section>
+
+
+
+<footer class="ng-scope" style="position: static; margin-top: 0px;">
+    <div>
+        <!-- FOLLOW US -->
+        <h3 class="roboto-regular center ng-scope" translate="FOLLOW_US">FOLLOW US</h3>
+        <div id="follow" class="center">
+            <a target="_blank" href=" https://www.facebook.com/MicroFocus/">
+                <img name="follow_facebook" src="css/images/facebook.png" alt="icon" data-ng-click="linkTo('')">
+            </a>
+            <a target="_blank" href="https://twitter.com/MicroFocus">
+                <img name="follow_twitter" src="css/images/twitter.png" alt="icon">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/1024?trk=tyah&amp;trkInfo=clickedVertical%3Ashowcase%2CclickedEntityId%3A1024%2Cidx%3A2-1-2%2CtarId%3A145431482.327%2Ctas%3Ahewlett%20packard%20enterprise%20software">
+                <img name="follow_linkedin" src="css/images/linkedin.png" alt="icon">
+            </a>
+        </div>
+        <label> © Advantage Inc, 2021. Release 3.2 </label>
+    </div>
+</footer>
+</div>
+
+<div virtual-footer="" id="virtualFooter" style="display: block; position: relative; height: 0px;"></div>
+
+
+<script type="text/javascript" data-main="main.min" src="vendor/requirejs/require.js"></script>
+
+<div id="toast">
+    <a>Product Added Successfully</a>
+</div>
+
+
+</body></html>

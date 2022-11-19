@@ -5,5 +5,5 @@ Feature: successfully create users
 
   Scenario: create an user successfully
     Given I want to go to the page of advantage demo
-    When I enter the informationn to create the user
+    When I enter the information to create the user
     Then I validate the correct user creation

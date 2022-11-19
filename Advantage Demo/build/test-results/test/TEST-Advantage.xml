@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Advantage" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-11T04:15:51" hostname="DESKTOP-SHN3JOM" time="37.094">
+<testsuite name="Advantage" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-18T22:55:41" hostname="DESKTOP-SHN3JOM" time="38.832">
   <properties/>
-  <testcase name="main" classname="Advantage" time="37.094"/>
+  <testcase name="main" classname="Advantage" time="38.832"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 25543
+  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 27938
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov 10, 2022 11:15:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+nov 18, 2022 5:55:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

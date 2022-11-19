@@ -12,6 +12,5 @@ import org.junit.runner.RunWith;
         snippets = SnippetType.CAMELCASE
 )
 
-
 public class CreateUsers {
 }

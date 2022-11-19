@@ -23,11 +23,11 @@ public class Advantage {
 
     @Test // estas son las acciones
     public void main() throws InterruptedException {
-        createUser((ChromeDriver) driver);
-        //loginUser((ChromeDriver) driver);
+        //createUser((ChromeDriver) driver);
+        loginUser((ChromeDriver) driver);
         buyLaptop((ChromeDriver) driver);
-        //MasterCreditExist((ChromeDriver) driver);
-        MasterCreditNoExist((ChromeDriver) driver);
+        MasterCreditExist((ChromeDriver) driver);
+        //MasterCreditNoExist((ChromeDriver) driver);
         Assert((ChromeDriver) driver);
         Thread.sleep(4000);
     }
@@ -57,10 +57,13 @@ public class Advantage {
     }
 
     public void loginUser(ChromeDriver driver) throws InterruptedException {
+        Thread.sleep(2000);
         driver.findElement(By.id("menuUserLink")).click(); // esta es la manera de como se busca elemento en la página //a[@id='menuUserLink']
+        Thread.sleep(2000);
         driver.findElement(By.name("username")).sendKeys("Maoruizh");
         driver.findElement(By.name("password")).sendKeys("Aa$123456789");
         driver.findElement(By.id("sign_in_btnundefined")).click();
+        Thread.sleep(2000);
     }
 
 
@@ -78,7 +81,7 @@ public class Advantage {
         driver.findElement(By.id("menuCart")).click();
         Thread.sleep(2000);
         driver.findElement(By.id("checkOutPopUp")).click();
-        Thread.sleep(3000);
+        Thread.sleep(6000);
         driver.findElement(By.id("next_btn")).click();
         Thread.sleep(2000);
     }
@@ -94,11 +97,12 @@ public class Advantage {
 
     public void MasterCreditExist(ChromeDriver driver) throws InterruptedException {
         driver.findElement(By.id("pay_now_btn_MasterCredit")).click();
-        Thread.sleep(1000);
+        Thread.sleep(6000);
     }
 
     public void Assert (ChromeDriver driver) throws InterruptedException {
     String ActualTitle = driver.findElement(By.xpath("//span[@class='roboto-regular ng-scope']")).getText();
+        Thread.sleep(1000);
     String ExpectedTitle = "Thank you for buying with Advantage";
         Assert.assertEquals(ExpectedTitle,ActualTitle);
     //consulte en esta pagina https://www.browserstack.com/guide/verify-and-assert-in-selenium#:~:text=assertEquals()%20is%20a%20method,shown%20in%20the%20image%20below.
