@@ -8,7 +8,6 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static co.com.empresamao.areait.advantage.userinterfaces.HomePage.*;
 import static co.com.empresamao.areait.advantage.userinterfaces.CreateUserPage.*;
 
 public class CreateUsers implements Task {

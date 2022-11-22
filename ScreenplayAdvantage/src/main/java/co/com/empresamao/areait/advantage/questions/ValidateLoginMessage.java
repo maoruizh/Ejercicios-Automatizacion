@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.empresamao.areait.advantage.utils.Constants.*;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
-import static co.com.empresamao.areait.advantage.userinterfaces.HomePage.LBL_RESULT;
+import static co.com.empresamao.areait.advantage.userinterfaces.LoginPage.LBL_RESULT;
 
 public class ValidateLoginMessage implements Question<Boolean> {
     @Override

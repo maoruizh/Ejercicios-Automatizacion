@@ -4,6 +4,8 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class CreateUserPage {
+    public static final Target ICN_MENU_USER = Target.the("Ingresar al menu de usuario").located(By.id("menuUserLink"));
+    public static final Target LBL_CREATE_NEW_ACCOUNT = Target.the("Crear una nueva cuenta").located(By.xpath("//a[@class='create-new-account ng-scope']"));
     public static final Target TXT_USER_NAME = Target.the("Nombre de usuario").located(By.name("usernameRegisterPage"));
     public static final Target TXT_USER_EMAIL = Target.the("Email del usuario").located(By.name("emailRegisterPage"));
     public static final Target TXT_PASSWORD= Target.the("Contrasena del usuario").located(By.name("passwordRegisterPage"));
