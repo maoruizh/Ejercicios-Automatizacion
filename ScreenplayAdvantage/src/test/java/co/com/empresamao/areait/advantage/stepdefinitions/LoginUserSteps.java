@@ -1,6 +1,8 @@
 package co.com.empresamao.areait.advantage.stepdefinitions;
 
-import co.com.empresamao.areait.advantage.questions.ValidateText;
+import co.com.empresamao.areait.advantage.questions.ValidateBuyMessage;
+import co.com.empresamao.areait.advantage.questions.ValidateLoginMessage;
+import co.com.empresamao.areait.advantage.tasks.BuyProducts;
 import co.com.empresamao.areait.advantage.tasks.LoginUser;
 import co.com.empresamao.areait.advantage.utils.MyDriversWeb;
 import cucumber.api.java.en.Given;
@@ -10,7 +12,6 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
-
 import static co.com.empresamao.areait.advantage.utils.Constants.*;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
@@ -24,13 +25,13 @@ public class LoginUserSteps {
 
     @When("^I enter the information to login a user$")
     public void iEnterTheInformationToLoginAUser() {
-        theActorInTheSpotlight().attemptsTo(LoginUser.loginUser());
-
+        theActorInTheSpotlight().attemptsTo(LoginUser.loginUser(),
+                BuyProducts.buyProducts());
     }
 
     @Then("^I validate the correct user login$")
     public void iValidateTheCorrectUserLogin() {
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateText.valtext()));
-
+        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateLoginMessage.valtext()));
+        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateBuyMessage.validateBuyMessage()));
     }
 }

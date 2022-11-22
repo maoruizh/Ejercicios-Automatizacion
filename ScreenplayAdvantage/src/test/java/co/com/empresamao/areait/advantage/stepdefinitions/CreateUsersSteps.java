@@ -1,6 +1,6 @@
 package co.com.empresamao.areait.advantage.stepdefinitions;
 
-import co.com.empresamao.areait.advantage.questions.ValidateText;
+import co.com.empresamao.areait.advantage.questions.ValidateLoginMessage;
 import co.com.empresamao.areait.advantage.tasks.CreateUsers;
 import co.com.empresamao.areait.advantage.utils.MyDriversWeb;
 import cucumber.api.java.en.Given;
@@ -28,7 +28,7 @@ public class CreateUsersSteps {
 
     @Then("^I validate the correct user creation$")
     public void iValidateTheCorrectUserCreation() {
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateText.valtext()));
+        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateLoginMessage.valtext()));
     }
 }
 
