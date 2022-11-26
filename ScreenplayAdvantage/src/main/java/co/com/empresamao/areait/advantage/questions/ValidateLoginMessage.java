@@ -5,9 +5,9 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static co.com.empresamao.areait.advantage.utils.Constants.*;
+import static co.com.empresamao.areait.advantage.userinterfaces.LoginPage.LBL_LOGIN_RESULT;
+import static co.com.empresamao.areait.advantage.utils.Constants.RESULT;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
-import static co.com.empresamao.areait.advantage.userinterfaces.LoginPage.LBL_RESULT;
 
 public class ValidateLoginMessage implements Question<Boolean> {
     @Override
@@ -17,8 +17,8 @@ public class ValidateLoginMessage implements Question<Boolean> {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        WaitUntil.the(LBL_RESULT, isVisible()).forNoMoreThan(10).seconds();
-        return RESULT.equals(Text.of(LBL_RESULT).viewedBy(actor).asString());
+        WaitUntil.the(LBL_LOGIN_RESULT, isVisible()).forNoMoreThan(10).seconds();
+        return RESULT.equals(Text.of(LBL_LOGIN_RESULT).viewedBy(actor).asString());
     }
     public static ValidateLoginMessage valtext() {
         return new ValidateLoginMessage();

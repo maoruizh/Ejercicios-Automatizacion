@@ -14,14 +14,14 @@ public class CreateUsers implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Waiting.losSegundos(ICN_MENU_USER,10),
+                Waiting.losSegundos(ICN_MENU_USER,15),
                 WaitUntil.the(ICN_MENU_USER,isVisible()).forNoMoreThan(15).seconds(),
                 Waiting.losSegundos(ICN_MENU_USER,10),
                 Click.on(ICN_MENU_USER),
                 Click.on(LBL_CREATE_NEW_ACCOUNT),
 
                 WaitUntil.the(TXT_USER_NAME,isVisible()).forNoMoreThan(15).seconds(),
-                Enter.theValue("Maoruizh411").into(TXT_USER_NAME),
+                Enter.theValue("Maoruizh3444444").into(TXT_USER_NAME),
                 Enter.theValue("mao@ruiz.com").into(TXT_USER_EMAIL),
                 Enter.theValue("Aa$123456789").into(TXT_PASSWORD),
                 Enter.theValue("Aa$123456789").into(TXT_CONFIRM_PASSWORD),
@@ -33,7 +33,21 @@ public class CreateUsers implements Task {
                 Enter.theValue("Antioquia").into(TXT_STATE),
                 Enter.theValue("055413").into(TXT_POSTAL_CODE),
                 Click.on(CHK_I_AGREE),
-                Click.on(BTN_REGISTER)
+                Click.on(BTN_REGISTER),
+
+                WaitUntil.the(BTN_USER,isVisible()).forNoMoreThan(15).seconds(),
+                Click.on( BTN_USER),
+                Click.on(BTN_MY_ACCOUNT),
+                Click.on(BTN_EDIT_PAYMENT),
+                Click.on(BTN_CREDIT_CARD),
+                Enter.theValue("123456789012").into(BTN_CARD_NUMBER),
+                Enter.theValue("2344").into(BTN_CVV_NUMBER),
+                Click.on(BTN_MM),
+                //WaitUntil.the(BTN_YY,isVisible()).forNoMoreThan(15).seconds(),
+                Click.on(BTN_YY),
+                Enter.theValue("Mao").into(BTN_CARD_HOLDER),
+                Click.on(BTN_SAVE)
+
         );
     }
     public static CreateUsers createUsers(){

@@ -1,6 +1,7 @@
 package co.com.empresamao.areait.advantage.stepdefinitions;
 
-import co.com.empresamao.areait.advantage.questions.ValidateLoginMessage;
+import co.com.empresamao.areait.advantage.questions.ValidateCreateUserMessage;
+import co.com.empresamao.areait.advantage.tasks.BuyProducts;
 import co.com.empresamao.areait.advantage.tasks.CreateUsers;
 import co.com.empresamao.areait.advantage.utils.MyDriversWeb;
 import cucumber.api.java.en.Given;
@@ -24,11 +25,12 @@ public class CreateUsersSteps {
     @When("^I enter the information to create the user$")
     public void iEnterTheInformationToCreateTheUser() {
         theActorInTheSpotlight().attemptsTo(CreateUsers.createUsers());
+        //theActorInTheSpotlight().attemptsTo(BuyProducts.buyProducts()); este se habilita cuando este lista toda la tarea de crear el usuario aun falta la parte de la edicion de la tarjeta de credito
     }
 
     @Then("^I validate the correct user creation$")
     public void iValidateTheCorrectUserCreation() {
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateLoginMessage.valtext()));
+       theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateCreateUserMessage.validateCreateUserMessage()));
     }
 }
 

@@ -25,13 +25,14 @@ public class LoginUserSteps {
 
     @When("^I enter the information to login a user$")
     public void iEnterTheInformationToLoginAUser() {
-        theActorInTheSpotlight().attemptsTo(LoginUser.loginUser(),
-                BuyProducts.buyProducts());
+        theActorInTheSpotlight().attemptsTo(LoginUser.loginUser());
+        //theActorInTheSpotlight().attemptsTo(BuyProducts.buyProducts());
+
     }
 
     @Then("^I validate the correct user login$")
     public void iValidateTheCorrectUserLogin() {
         theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateLoginMessage.valtext()));
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateBuyMessage.validateBuyMessage()));
+        //theActorInTheSpotlight().should(GivenWhenThen.seeThat(ValidateBuyMessage.validateBuyMessage()));
     }
 }
