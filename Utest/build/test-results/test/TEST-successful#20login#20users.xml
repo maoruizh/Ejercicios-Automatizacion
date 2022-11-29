@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="successful login users" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-28T22:21:11" hostname="DESKTOP-SHN3JOM" time="31.399">
+<testsuite name="successful login users" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-29T01:57:43" hostname="DESKTOP-SHN3JOM" time="34.57">
   <properties/>
-  <testcase name="create an user successfully" classname="successful login users" time="31.399"/>
+  <testcase name="create an user successfully" classname="successful login users" time="34.57"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 19457
+  <system-err><![CDATA[Starting ChromeDriver 107.0.5304.62 (1eec40d3a5764881c92085aaee66d25075c159aa-refs/branch-heads/5304@{#942}) on port 20255
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-nov 28, 2022 5:21:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+nov 28, 2022 8:57:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
