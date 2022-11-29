@@ -5,7 +5,9 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.SendKeys;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.Keys;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
@@ -14,20 +16,21 @@ public class LoginUsers implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                //WaitUntil.the(BTN_LOGIN_MENU_USER, isVisible()).forNoMoreThan(15).seconds(),
                 Click.on(Home.BTN_LOGIN_MENU_USER),
 
-                Enter.theValue("Mao").into(Personal.TXT_LOGIN_FIRST_NAME),
-                Enter.theValue("Ruiz").into(Personal.TXT_LOGIN_LAST_NAME),
-                Enter.theValue("maoruizh@gmail.co").into(Personal.TXT_LOGIN_EMAIL),
+                SendKeys.of("Mao").into(Personal.TXT_LOGIN_FIRST_NAME),
+                SendKeys.of("Ruiz").into(Personal.TXT_LOGIN_LAST_NAME),
+                SendKeys.of("maoruizh@gmail.co").into(Personal.TXT_LOGIN_EMAIL),
                 Click.on(Personal.TXT_LOGIN_MONTH),
                 Click.on(Personal.TXT_LOGIN_DAY),
                 Click.on(Personal.TXT_LOGIN_YEAR),
                 Click.on(Personal.TXT_LOGIN_LANGUAGE),
-                Enter.theValue("Spanish").into(Personal.TXT_LOGIN_LANGUAGE),
+                SendKeys.of("Spanish").into(Personal.TXT_LOGIN_LANGUAGE),
                 Click.on(Personal.BTN_NEXT),
 
-                //Enter.theValue("Sabaneta, Antioquia, Colombia").into(TXT_CITY),
+                Enter.theValue("Sabaneta, Antioquia, Colombia").into(Address.TXT_CITY),
+                SendKeys.of(Keys.ARROW_DOWN).into(Address.TXT_CITY),
+                SendKeys.of(Keys.ENTER).into(Address.TXT_CITY),
                 Enter.theValue("055450").into(Address.TXT_POSTAL_CODE),
                 Click.on(Address.TXT_COUNTRY),
                 Click.on(Address.LST_COUNTRY),

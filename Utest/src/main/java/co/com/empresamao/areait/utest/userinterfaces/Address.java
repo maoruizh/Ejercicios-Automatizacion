@@ -4,7 +4,7 @@ import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class Address {
-    //public static final Target TXT_CITY = Target.the("City").located(By.id("city"));
+    public static final Target TXT_CITY = Target.the("City").located(By.id("city"));
     //public static final Target TXT_CITY_SPECIFIC = Target.the("City").located(By.id("(//input[@id=\"city\"])[2]"));
     public static final Target TXT_POSTAL_CODE = Target.the("Postal code").located(By.id("zip"));
     public static final Target TXT_COUNTRY = Target.the("Country").located(By.name("countryId"));
