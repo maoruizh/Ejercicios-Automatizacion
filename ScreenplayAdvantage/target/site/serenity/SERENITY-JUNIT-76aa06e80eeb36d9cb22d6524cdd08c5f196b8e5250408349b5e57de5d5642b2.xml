@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="successfully create users" skipped="0" tests="1" time="29.91" timestamp="2022-11-23 08:36:41"><testcase name="create an user successfully"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by xpath: (//span[contains(text(),'Maoruizh3444444')])[2]" type="java.lang.AssertionError">
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="successfully create users" skipped="0" tests="1" time="30.98" timestamp="2022-11-29 09:09:14"><testcase name="create an user successfully"><failure message="&#10;Expected: an element that is visible&#10;     but: no matching element found by xpath: (//span[contains(text(),'Maoruizh3444444')])[2]" type="java.lang.AssertionError">
 Expected: an element that is visible
      but: no matching element found by xpath: (//span[contains(text(),'Maoruizh3444444')])[2]</failure><system-err>
 Expected: an element that is visible

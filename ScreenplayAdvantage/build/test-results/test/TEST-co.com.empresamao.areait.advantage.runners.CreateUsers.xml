@@ -7,7 +7,7 @@
 
 1 Scenarios (?[31m1 failed?[0m)
 3 Steps (?[31m1 failed?[0m, ?[36m1 skipped?[0m, ?[32m1 passed?[0m)
-0m31,486s
+0m32,665s
 
 java.lang.AssertionError: 
 Expected: an element that is visible
@@ -21,7 +21,7 @@ Expected: an element that is visible
 	at net.serenitybdd.screenplay.Actor.performSilently(Actor.java:194)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:167)
 	at co.com.empresamao.areait.advantage.tasks.CreateUsers.performAs(CreateUsers.java:16)
-	at co.com.empresamao.areait.advantage.tasks.CreateUsers$ByteBuddy$AYSbP7Iz.performAs$accessor$rA4EqGoa(Unknown Source)
+	at co.com.empresamao.areait.advantage.tasks.CreateUsers$ByteBuddy$QuWYAZ7D.performAs$accessor$os9wK34V(Unknown Source)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -32,7 +32,7 @@ Expected: an element that is visible
 	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:180)
 	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:167)
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:74)
-	at co.com.empresamao.areait.advantage.tasks.CreateUsers$ByteBuddy$AYSbP7Iz.performAs(Unknown Source)
+	at co.com.empresamao.areait.advantage.tasks.CreateUsers$ByteBuddy$QuWYAZ7D.performAs(Unknown Source)
 	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
 	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
 	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
