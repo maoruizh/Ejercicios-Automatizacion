@@ -1,11 +1,15 @@
 package co.com.empresamao.areait.advantage.tasks;
 
 import co.com.empresamao.areait.advantage.interactions.Waiting;
+import co.com.empresamao.areait.advantage.userinterfaces.CreateUserPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.SendKeys;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.Keys;
+
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static co.com.empresamao.areait.advantage.userinterfaces.CreateUserPage.*;
@@ -21,7 +25,7 @@ public class CreateUsers implements Task {
                 Click.on(LBL_CREATE_NEW_ACCOUNT),
 
                 WaitUntil.the(TXT_USER_NAME,isVisible()).forNoMoreThan(15).seconds(),
-                Enter.theValue("Maoruizh3444444").into(TXT_USER_NAME),
+                Enter.theValue("Maoruizh533333").into(TXT_USER_NAME),
                 Enter.theValue("mao@ruiz.com").into(TXT_USER_EMAIL),
                 Enter.theValue("Aa$123456789").into(TXT_PASSWORD),
                 Enter.theValue("Aa$123456789").into(TXT_CONFIRM_PASSWORD),
@@ -41,13 +45,16 @@ public class CreateUsers implements Task {
                 Click.on(BTN_EDIT_PAYMENT),
                 Click.on(BTN_CREDIT_CARD),
                 Enter.theValue("123456789012").into(BTN_CARD_NUMBER),
-                Enter.theValue("2344").into(BTN_CVV_NUMBER),
+                Waiting.losSegundos(BTN_CVV_NUMBER,15),
+                WaitUntil.the(BTN_USER,isVisible()).forNoMoreThan(15).seconds(),
+                SendKeys.of("2544").into(BTN_CVV_NUMBER),
+                WaitUntil.the(BTN_CVV_NUMBER,isVisible()).forNoMoreThan(15).seconds(),
                 Click.on(BTN_MM),
-                //WaitUntil.the(BTN_YY,isVisible()).forNoMoreThan(15).seconds(),
                 Click.on(BTN_YY),
                 Enter.theValue("Mao").into(BTN_CARD_HOLDER),
-                Click.on(BTN_SAVE)
-
+                Click.on(CHK_PREFERREDPAYMENT),
+                Click.on(BTN_SAVE),
+                Click.on(BTN_HOME)
         );
     }
     public static CreateUsers createUsers(){

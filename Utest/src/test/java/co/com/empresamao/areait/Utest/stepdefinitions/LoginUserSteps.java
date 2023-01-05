@@ -21,7 +21,7 @@ public class LoginUserSteps {
 
     @Given("^I want to go to the login page of Utest$")
     public void iWantToGoToTheLoginPageOfUtest() {
-        WebDriverManager.chromedriver().setup();// si quiero abrirlo con otro navegador lo cambio a ca donde dice chromedriver por ejemplo: firefoxdriver
+        WebDriverManager.chromedriver().setup();// si quiero abrirlo con otro navegador lo cambio aca donde dice chromedriver por ejemplo: firefoxdriver
         OnStage.setTheStage(new Cast());
         OnStage.theActorCalled(ACTOR_PAGE);
         OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(hisBrowser));

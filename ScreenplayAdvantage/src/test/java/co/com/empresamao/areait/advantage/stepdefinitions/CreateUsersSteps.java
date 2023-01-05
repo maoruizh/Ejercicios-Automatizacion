@@ -25,7 +25,7 @@ public class CreateUsersSteps {
     @When("^I enter the information to create the user$")
     public void iEnterTheInformationToCreateTheUser() {
         theActorInTheSpotlight().attemptsTo(CreateUsers.createUsers());
-        //theActorInTheSpotlight().attemptsTo(BuyProducts.buyProducts()); este se habilita cuando este lista toda la tarea de crear el usuario aun falta la parte de la edicion de la tarjeta de credito
+        theActorInTheSpotlight().attemptsTo(BuyProducts.buyProducts());
     }
 
     @Then("^I validate the correct user creation$")

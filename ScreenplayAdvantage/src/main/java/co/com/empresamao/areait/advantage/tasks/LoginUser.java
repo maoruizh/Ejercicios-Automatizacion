@@ -21,7 +21,7 @@ public class LoginUser implements Task {
                 Click.on(ICN_LOGIN_MENU_USER),
 
                 WaitUntil.the(TXT_LOGIN_USER_NAME, isVisible()).forNoMoreThan(15).seconds(),
-                Enter.theValue("Maoruizh").into(TXT_LOGIN_USER_NAME),
+                Enter.theValue("Maoruizh5333").into(TXT_LOGIN_USER_NAME),
                 Enter.theValue("Aa$123456789").into(TXT_LOGIN_PASSWORD),
                 Click.on(BTN_LOGIN_SIGN_IN)
         );
