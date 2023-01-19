@@ -1,0 +1,873 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/automatization/static/css/index.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>  </title>
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script> 
+
+<style>/* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.m-3{margin:0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.my-4{margin-top:1rem;margin-bottom:1rem}.flex{display:flex}.grid{display:grid}.w-full{width:100%}.w-1\/2{width:50%}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.content-center{align-content:center}.items-center{align-items:center}.justify-center{justify-content:center}.justify-around{justify-content:space-around}.justify-evenly{justify-content:space-evenly}.gap-4{gap:1rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.rounded-md{border-radius:0.375rem}.rounded-b-md{border-bottom-right-radius:0.375rem;border-bottom-left-radius:0.375rem}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.p-3{padding:0.75rem}.p-4{padding:1rem}.text-center{text-align:center}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94 / var(--tw-text-opacity))}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}</style></head>
+<body class="bg-gray-200">
+    
+<div class="bg-white w-full flex flex-row justify-around rounded-b-md shadow-md">
+    <img src="https://evalartapp.com/img/presentacionmin.png" class="">
+    <h1 class="text-center text-3xl p-3 m-3">Prueba de automatización</h1>
+</div>
+
+
+<div class="p-3 w-full mx-auto my-5 flex justify-around ">
+  <div class="bg-white  rounded-md p-3 shadow-md w-1/2 space-y-4">
+    <p class="text-2xl text-center">Usa las siguientes coordenadas para hallar el botón correcto</p>
+    <p class="text-center text-xl font-bold">(2,8);(9,-2);(-9,-4);(3,-2);(-1,10)</p>
+  </div>
+  <div class="bg-white  rounded-md p-3 shadow-md">
+    <div>
+       
+    <div class="my-4">
+
+        <p class="text-xl text-center font-bold"> Ciclos: </p>
+        <p class="text-xl text-center text-green-500">Se encuentra en el ciclo 1 de 14</p>
+    </div>
+    
+</div>
+  </div>
+</div>
+
+<div class="flex flex-row p-3 justify-evenly ">
+  <form class="space-y-4 flex flex-col justify-center content-center items-center bg-white p-4 rounded-md">
+    <div class="w-3/2 grid gap-4 grid-cols-14">
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="66">
+        66
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="4">
+        4
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="151">
+        151
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="69">
+        69
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="159">
+        159
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="115">
+        115
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="117">
+        117
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="3">
+        3
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="174">
+        174
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="11">
+        11
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="81">
+        81
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="103">
+        103
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="134">
+        134
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="170">
+        170
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="191">
+        191
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="164">
+        164
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="189">
+        189
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="26">
+        26
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="12">
+        12
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="120">
+        120
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="175">
+        175
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="102">
+        102
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="21">
+        21
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="153">
+        153
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="49">
+        49
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="119">
+        119
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="15">
+        15
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="176">
+        176
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="60">
+        60
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="123">
+        123
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="33">
+        33
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="16">
+        16
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="61">
+        61
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="13">
+        13
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="158">
+        158
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="23">
+        23
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="124">
+        124
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="144">
+        144
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="146">
+        146
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="36">
+        36
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="116">
+        116
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="27">
+        27
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="37">
+        37
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="160">
+        160
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="167">
+        167
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="35">
+        35
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="75">
+        75
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="8">
+        8
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="58">
+        58
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="192">
+        192
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="162">
+        162
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="80">
+        80
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="97">
+        97
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="62">
+        62
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="68">
+        68
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="76">
+        76
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="41">
+        41
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="2">
+        2
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="31">
+        31
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="131">
+        131
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="156">
+        156
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="19">
+        19
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="44">
+        44
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="194">
+        194
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="112">
+        112
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="173">
+        173
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="111">
+        111
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="67">
+        67
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="135">
+        135
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="100">
+        100
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="136">
+        136
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="57">
+        57
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="184">
+        184
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="195">
+        195
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="9">
+        9
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="52">
+        52
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="107">
+        107
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="87">
+        87
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="196">
+        196
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="29">
+        29
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="79">
+        79
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="161">
+        161
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="89">
+        89
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="85">
+        85
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="73">
+        73
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="96">
+        96
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="105">
+        105
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="46">
+        46
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="84">
+        84
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="166">
+        166
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="10">
+        10
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="140">
+        140
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="38">
+        38
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="6">
+        6
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="148">
+        148
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="149">
+        149
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="198">
+        198
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="77">
+        77
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="70">
+        70
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="28">
+        28
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="147">
+        147
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="30">
+        30
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="172">
+        172
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="42">
+        42
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="183">
+        183
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="56">
+        56
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="106">
+        106
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="91">
+        91
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="138">
+        138
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="179">
+        179
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="92">
+        92
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="101">
+        101
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="177">
+        177
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="168">
+        168
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="132">
+        132
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="141">
+        141
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="39">
+        39
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="99">
+        99
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="95">
+        95
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="71">
+        71
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="125">
+        125
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="78">
+        78
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="82">
+        82
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="50">
+        50
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="104">
+        104
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="137">
+        137
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="171">
+        171
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="25">
+        25
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="118">
+        118
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="182">
+        182
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="128">
+        128
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="47">
+        47
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="185">
+        185
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="90">
+        90
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="93">
+        93
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="109">
+        109
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="5">
+        5
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="193">
+        193
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="127">
+        127
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="181">
+        181
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="163">
+        163
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="187">
+        187
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="143">
+        143
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="55">
+        55
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="74">
+        74
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="72">
+        72
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="178">
+        178
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="130">
+        130
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="14">
+        14
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="155">
+        155
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="154">
+        154
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="133">
+        133
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="139">
+        139
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="43">
+        43
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="113">
+        113
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="197">
+        197
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="88">
+        88
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="145">
+        145
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="86">
+        86
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="54">
+        54
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="20">
+        20
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="150">
+        150
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="40">
+        40
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="24">
+        24
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="64">
+        64
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="18">
+        18
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="110">
+        110
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="152">
+        152
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="48">
+        48
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="157">
+        157
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="7">
+        7
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="53">
+        53
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="169">
+        169
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="126">
+        126
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="186">
+        186
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="129">
+        129
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="45">
+        45
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="32">
+        32
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="98">
+        98
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="34">
+        34
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="22">
+        22
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="51">
+        51
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="59">
+        59
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="199">
+        199
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="114">
+        114
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="121">
+        121
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="188">
+        188
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="63">
+        63
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="165">
+        165
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="180">
+        180
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="1">
+        1
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="94">
+        94
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="17">
+        17
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="190">
+        190
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="142">
+        142
+      </button>
+      
+      <button type="button" name="button_option" onclick="button_click(this)" class="grid_button" value="108">
+        108
+      </button>
+      
+    </div>
+  </form>
+</div>
+
+    
+<script>
+
+const button_click  = async (button)=>{
+  const response = await fetch('/automatization/buttons/api/answer',{
+    method:'POST',
+    body: JSON.stringify({'answer':button.value}),
+    headers: {
+      'Content-Type':'application/json'
+    }
+  })
+  const answer= await response.json()
+  if(!answer.result){
+    window.location.replace("/automatization/buttons/wrong");
+    return 
+  }
+  bootbox.dialog({
+    title:"Pregunta extra",
+    message:`
+    <div class="flex flex-col">
+      <form
+      action="/automatization/buttons/answer"
+      method="POST"
+      class="space-y-10 flex flex-col justify-center content-center items-center">
+      <h2 class="text-xl text-center">Suma todos los numeros alrededor de la respuesta (incluyendo la respuesta)</h2>
+      <input type="number" class="rounded-md border-2 border-black p-2" placeholder="Suma total" required name="modal_answer">
+      <button
+            type="submit"
+            class="border-black p-2 border-2 rounded-md mx-auto hover:bg-blue-300"
+            >
+            Enviar
+      </button>
+    </form>
+    </div>`
+  })
+  
+}
+</script>
+
+
+</body></html>

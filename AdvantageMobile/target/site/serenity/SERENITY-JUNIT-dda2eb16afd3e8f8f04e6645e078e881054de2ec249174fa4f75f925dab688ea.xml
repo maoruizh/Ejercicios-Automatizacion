@@ -1,1 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="successful login users" skipped="1" tests="1" time="0.09" timestamp="2023-01-05 04:52:22"><testcase name="create an user successfully"><skipped/></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="successful login users" skipped="0" tests="1" time="44.45" timestamp="2023-01-06 06:08:55"><testcase name="create an user successfully"><failure message="Expected enabled element was not enabled" type="net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException">Expected enabled element was not enabled</failure><system-err>Expected enabled element was not enabled&#13;
+co.com.empresamao.areait.advantageMobile.tasks.CreateUser.performAs(CreateUser.java:26)&#13;
+co.com.empresamao.areait.advantageMobile.stepdefinitions.CreateUserSteps.iEnterTheInformationToCreateTheUser(CreateUserSteps.java:28)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
+worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;
+</system-err></testcase></testsuite>
