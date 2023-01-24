@@ -132,7 +132,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 06-01-2023 18:08</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 24-01-2023 17:43</span>
     <br style="clear:left"/>
 </div>
 
@@ -169,9 +169,9 @@ To validate that users are successfully login
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="failing-color">create an user successfully
+                                <span class="error-color">create an user successfully
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -198,7 +198,7 @@ To validate that users are successfully login
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">Element should be enabled exception: Expected enabled element was not enabled</span>
+                    <span class="error-message error-message-title">Null pointer exception</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -214,20 +214,13 @@ To validate that users are successfully login
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>net.thucydides.core.webdriver.exceptions.ElementShouldBeEnabledException </h4>
+                    <h4>java.lang.NullPointerException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>co.com.empresamao.areait.advantageMobile.tasks.CreateUser.performAs(CreateUser.java:26)<br />co.com.empresamao.areait.advantageMobile.stepdefinitions.CreateUserSteps.iEnterTheInformationToCreateTheUser(CreateUserSteps.java:28)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                        <pre>co.com.empresamao.areait.advantageMobile.tasks.CreateUser.performAs(CreateUser.java:86)<br />co.com.empresamao.areait.advantageMobile.stepdefinitions.CreateUserSteps.iEnterTheInformationToCreateTheUser(CreateUserSteps.java:28)<br />✽.I enter the information to create The user(src/test/resources/Features/create_users.feature:8)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for By.xpath: //android.view.ViewGroup[@content-desc=&quot;Home Page&quot;]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.RelativeLayout/android.widget.EditText to be enabled (tried for 5 second(s) with 100 milliseconds interval)</pre>
-                        <pre>co.com.empresamao.areait.advantageMobile.tasks.CreateUser.performAs(CreateUser.java :26)<br />co.com.empresamao.areait.advantageMobile.stepdefinitions.CreateUserSteps.iEnterTheInformationToCreateTheUser(CreateUserSteps.java :28)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java :69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java :74)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -235,39 +228,42 @@ To validate that users are successfully login
 
 
                 <div class="panel-body">
-                    <a href="pagesource7723261741431825257.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource443973269158876536.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="00fa980236a34c8ff8713baf388507ecd2c1fc601f83894b144006ada1ea332d.png" title=" Example: {username=maoruizh, email=maoruiz@gmail.com, password=Asdfghj1234567, confirmPassword=Asdfghj1234567, firstName=Mao, lastName=Ruiz, phoneNumber=3112575629, country=Colombia, state=Antioquia, address=Calle 65 sur, city=Sabaneta}" width="1080"/>
-                <img src="00fa980236a34c8ff8713baf388507ecd2c1fc601f83894b144006ada1ea332d.png" title=" Given I want to go to the page of advantage demo" width="1080"/>
-                <img src="00fa980236a34c8ff8713baf388507ecd2c1fc601f83894b144006ada1ea332d.png" title=" When I enter the information to create The user
+                <img src="ae1deba421f6410ec4337c1fd3e8d0ef80540ecb7206467a7721f428dc09530c.png" title=" Example: {username=maoruizh, email=maoruiz@gmail.com, password=Asdfghj1234567, confirmPassword=Asdfghj1234567, firstName=Mao, lastName=Ruiz, phoneNumber=3112575629, country=Colombia, state=Antioquia, address=Calle 65 sur, city=Sabaneta}" width="1080"/>
+                <img src="ae1deba421f6410ec4337c1fd3e8d0ef80540ecb7206467a7721f428dc09530c.png" title=" Given I want to go to the page of advantage demo" width="1080"/>
+                <img src="ae1deba421f6410ec4337c1fd3e8d0ef80540ecb7206467a7721f428dc09530c.png" title=" When I enter the information to create The user
 | username | email | password | confirmPassword | firstName | lastName | phoneNumber | country | state | address | city |
 | maoruizh | maoruiz@gmail.com | Asdfghj1234567 | Asdfghj1234567 | Mao | Ruiz | 3112575629 | Colombia | Antioquia | Calle 65 sur | Sabaneta |" width="1080"/>
-                <img src="59489ebc3885fd366274117b9ce5b73605e7062e5d98547a53950e8fa6077fce.png" title=" Mao main" width="1080"/>
-                <img src="59489ebc3885fd366274117b9ce5b73605e7062e5d98547a53950e8fa6077fce.png" title=" Mao clicks on Hamburger icon" width="1080"/>
-                <img src="6634c2b704eb6f130a25dea93369e1c3f26ad40578fd77a02abfc5231b7458c1.png" title=" Mao clicks on Hamburger icon (completed)" width="1080"/>
-                <img src="6634c2b704eb6f130a25dea93369e1c3f26ad40578fd77a02abfc5231b7458c1.png" title=" Mao clicks on Label login" width="1080"/>
-                <img src="2a887f700f437e638c875f2d750b5c7d56a35754b28006da6606b268738639e4.png" title=" Mao clicks on Label login (completed)" width="1080"/>
-                <img src="2a887f700f437e638c875f2d750b5c7d56a35754b28006da6606b268738639e4.png" title=" Mao clicks on Create account " width="1080"/>
-                <img src="cf8d20bd56f4352dbf2e894c3f23afb48b50bed938352ae52dfa9648daa2eb8a.png" title=" Mao clicks on Create account  (completed)" width="1080"/>
-                <img src="cf8d20bd56f4352dbf2e894c3f23afb48b50bed938352ae52dfa9648daa2eb8a.png" title=" Mao main (completed)" width="1080"/>
-                <img src="2a4a911bfe445351a9fb10c61f1e90618992ab74051e007ce49b24c86099a27d.png" title=" Mao create user" width="1080"/>
-                <img src="cf8d20bd56f4352dbf2e894c3f23afb48b50bed938352ae52dfa9648daa2eb8a.png" title=" Mao clicks on Username" width="1080"/>
-                <img src="545f8c521361ae665d21cf59ecd1fcf45d84fa37327d8fbdccd269665239ea50.png" title=" Mao clicks on Username (completed)" width="1080"/>
-                <img src="545f8c521361ae665d21cf59ecd1fcf45d84fa37327d8fbdccd269665239ea50.png" title=" Mao enters 'maoruizh' into Username" width="1080"/>
-                <img src="f5cb7bfcca3d0effdacb38e60297ea3ed58bb8007a05302fdecfac2165449d79.png" title=" Mao enters 'maoruizh' into Username (completed)" width="1080"/>
-                <img src="f5cb7bfcca3d0effdacb38e60297ea3ed58bb8007a05302fdecfac2165449d79.png" title=" Mao clicks on Email" width="1080"/>
-                <img src="30aaf2fe25f76351ae69f679d7374442956dd645c63d64a6437a2bbc3071eb35.png" title=" Mao clicks on Email (completed)" width="1080"/>
-                <img src="30aaf2fe25f76351ae69f679d7374442956dd645c63d64a6437a2bbc3071eb35.png" title=" Mao enters 'maoruiz@gmail.com' into Email" width="1080"/>
-                <img src="f7270d5d7412d36434a7a640dcc2164e172af6a56bd0df57bdf19e95475ec200.png" title=" Mao enters 'maoruiz@gmail.com' into Email (completed)" width="1080"/>
-                <img src="f7270d5d7412d36434a7a640dcc2164e172af6a56bd0df57bdf19e95475ec200.png" title=" Mao clicks on Password" width="1080"/>
-                <img src="3caf75a77aae5fd7c5e77216d31488db7462944a32d0c16d091d061446fbb55d.png" title=" Mao clicks on Password (completed)" width="1080"/>
-                <img src="3caf75a77aae5fd7c5e77216d31488db7462944a32d0c16d091d061446fbb55d.png" title=" Mao enters 'maoruiz@gmail.com' into Password" width="1080"/>
-                <img src="745b7b5770358fa659dbd891d26d96e12f5495034ddde3cd2ca5da8c62b5a3b2.png" title=" Mao enters 'maoruiz@gmail.com' into Password (completed)" width="1080"/>
-                <img src="745b7b5770358fa659dbd891d26d96e12f5495034ddde3cd2ca5da8c62b5a3b2.png" title=" Mao clicks on ConfirmPassword" width="1080"/>
-                <img src="d9a358d9b8cfe6f1c8752f57a12ee0eee7581c5cedaf08db596d755adaf468d7.png" title=" Mao clicks on ConfirmPassword (completed): <span class='failing-color'>FAILURE</span>" width="1080"/>
+                <img src="7fa269cd98d1e84bc86356ce1489ad6d8f7be32e0fb960d11d9bc1d0f3676e9d.png" title=" Mao main" width="1080"/>
+                <img src="7fa269cd98d1e84bc86356ce1489ad6d8f7be32e0fb960d11d9bc1d0f3676e9d.png" title=" Mao clicks on Hamburger icon" width="1080"/>
+                <img src="429c0980fe866f02983da91267e6216631422b05b40884e6fc81316257e4d7bd.png" title=" Mao clicks on Hamburger icon (completed)" width="1080"/>
+                <img src="429c0980fe866f02983da91267e6216631422b05b40884e6fc81316257e4d7bd.png" title=" Mao clicks on Label login" width="1080"/>
+                <img src="0e2e7822f7db53fb16bd29583b0423d412aee2924fac32933a2b3778df668853.png" title=" Mao clicks on Label login (completed)" width="1080"/>
+                <img src="0e2e7822f7db53fb16bd29583b0423d412aee2924fac32933a2b3778df668853.png" title=" Mao clicks on Create account " width="1080"/>
+                <img src="56696dc4a9f2addc800379bf2ef4424dda26c80b18947331e4454a4e77ad04bb.png" title=" Mao clicks on Create account  (completed)" width="1080"/>
+                <img src="56696dc4a9f2addc800379bf2ef4424dda26c80b18947331e4454a4e77ad04bb.png" title=" Mao main (completed)" width="1080"/>
+                <img src="56696dc4a9f2addc800379bf2ef4424dda26c80b18947331e4454a4e77ad04bb.png" title=" Mao create user" width="1080"/>
+                <img src="56696dc4a9f2addc800379bf2ef4424dda26c80b18947331e4454a4e77ad04bb.png" title=" Mao enters 'maoruizh' into Username" width="1080"/>
+                <img src="27d21adad5a917eec57abacdb992eae5e4ba576aa9f1b05f149154909d815abe.png" title=" Mao enters 'maoruizh' into Username (completed)" width="1080"/>
+                <img src="27d21adad5a917eec57abacdb992eae5e4ba576aa9f1b05f149154909d815abe.png" title=" Mao enters 'maoruiz@gmail.com' into Email" width="1080"/>
+                <img src="be10cfbe7215245f6e8220e30ce0459f9fdc87e25a292e420d6e7f8b620d011c.png" title=" Mao enters 'maoruiz@gmail.com' into Email (completed)" width="1080"/>
+                <img src="be10cfbe7215245f6e8220e30ce0459f9fdc87e25a292e420d6e7f8b620d011c.png" title=" Mao enters 'Asdfghj1234567' into Password" width="1080"/>
+                <img src="835a0340a9c2964acb24ebc5bcd61ffdc7225ae6ed9b8a0821b2094be095e50a.png" title=" Mao enters 'Asdfghj1234567' into Password (completed)" width="1080"/>
+                <img src="835a0340a9c2964acb24ebc5bcd61ffdc7225ae6ed9b8a0821b2094be095e50a.png" title=" Mao enters 'Asdfghj1234567' into ConfirmPassword" width="1080"/>
+                <img src="5d2b01fc6380880185d96774910ca48dad7a5516e957528e75597aea00b6928c.png" title=" Mao enters 'Asdfghj1234567' into ConfirmPassword (completed)" width="1080"/>
+                <img src="5d2b01fc6380880185d96774910ca48dad7a5516e957528e75597aea00b6928c.png" title=" Mao enters 'Mao' into Firstname" width="1080"/>
+                <img src="71c1e09e162c7e7d65aba7883da84c8b893822cdd0279e9f0913cb7c47cf08be.png" title=" Mao enters 'Mao' into Firstname (completed)" width="1080"/>
+                <img src="71c1e09e162c7e7d65aba7883da84c8b893822cdd0279e9f0913cb7c47cf08be.png" title=" Mao enters 'Ruiz' into Lastname" width="1080"/>
+                <img src="e02f3ec744eb74474ec3db5f40fd107ec2909ab08aa660a9846bd0dc695cedf2.png" title=" Mao enters 'Ruiz' into Lastname (completed)" width="1080"/>
+                <img src="fbe68130211d0894fc6e4fb7c6099f73189919f1e19cc12a0fa77d7159256abc.png" title=" Mao enters '3112575629' into Phone" width="1080"/>
+                <img src="d1a718daa46032fbd18ae7bd1bc13c7c6639b05f066b62722b080003d12dcff4.png" title=" Mao enters '3112575629' into Phone (completed)" width="1080"/>
+                <img src="d1a718daa46032fbd18ae7bd1bc13c7c6639b05f066b62722b080003d12dcff4.png" title=" Mao clicks on Country" width="1080"/>
+                <img src="d1a718daa46032fbd18ae7bd1bc13c7c6639b05f066b62722b080003d12dcff4.png" title=" Mao clicks on Country (completed)" width="1080"/>
+                <img src="a5304433c84b41ac5712c7f78e1210700d599c383a03f2db85166c2344b01471.png" title=" Mao create user (completed): <span class='error-color'>ERROR</span>" width="1080"/>
             </div>
         </div>
 

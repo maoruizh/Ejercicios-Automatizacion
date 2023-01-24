@@ -33,9 +33,13 @@ public class CreateAccountPage {
             .locatedForIOS(By.xpath(""));
 
     public static final Target TXT_COUNTRY = Target.the("Country")
-            .locatedForAndroid(By.id("textViewCountries"))
+            .locatedForAndroid(By.id("linearLayoutCountry"))
             .locatedForIOS(By.id(""));
 
+    public static final Target TXT_COUNTRY_BELGIUM = Target.the("Country_Belgium")
+                                         //Argentina  /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[9]
+            .locatedForAndroid(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[8]"))
+            .locatedForIOS(By.xpath(""));
     public static final Target TXT_STATE = Target.the("State")
             .locatedForAndroid(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText"))
             .locatedForIOS(By.xpath(""));

@@ -10,12 +10,13 @@ public class CreateUserModels {
     private String lastName;
     private String phoneNumber;
     private String country;
+    private String countryBelgium;
     private String state;
     private String address;
     private String city;
     private String zip;
 
-    public CreateUserModels(String username, String email, String password, String confirmPassword, String firstName, String lastName, String phoneNumber, String country, String state, String address, String city, String zip) {
+    public CreateUserModels(String username, String email, String password, String confirmPassword, String firstName, String lastName, String phoneNumber, String country, String countryBelgium, String state, String address, String city, String zip) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -24,6 +25,7 @@ public class CreateUserModels {
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
         this.country = country;
+        this.countryBelgium = countryBelgium;
         this.state = state;
         this.address = address;
         this.city = city;
@@ -86,12 +88,16 @@ public class CreateUserModels {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getCountry() {
-        return country;
-    }
+    public String getCountry() { return country; }
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    public String getCountryBelgium() {return countryBelgium;}
+
+    public void setCountryBelgium(String countryBelgium) {
+        this.countryBelgium = countryBelgium;
     }
 
     public String getState() {
