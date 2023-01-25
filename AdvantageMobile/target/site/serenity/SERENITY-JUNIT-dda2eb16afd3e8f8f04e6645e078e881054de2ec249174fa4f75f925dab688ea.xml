@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="successful login users" skipped="0" tests="1" time="25.94" timestamp="2023-01-24 05:43:40"><testcase name="create an user successfully"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-co.com.empresamao.areait.advantageMobile.tasks.CreateUser.performAs(CreateUser.java:86)&#13;
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="successful login users" skipped="0" tests="1" time="29.18" timestamp="2023-01-24 07:12:46"><testcase name="create an user successfully"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+co.com.empresamao.areait.advantageMobile.tasks.CreateUser.performAs(CreateUser.java:91)&#13;
 co.com.empresamao.areait.advantageMobile.stepdefinitions.CreateUserSteps.iEnterTheInformationToCreateTheUser(CreateUserSteps.java:28)&#13;
 ✽.I enter the information to create The user(src/test/resources/Features/create_users.feature:8)&#13;
 </system-err></testcase></testsuite>

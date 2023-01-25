@@ -70,19 +70,22 @@ public class CreateUser implements Task {
                 Click.on(TXT_COUNTRY)
         );
 
+        pointOptionStart = PointOption.point(dims.width / 2, dims.height / 2);
+        pointOptionEnd = PointOption.point(dims.width / 2, dims.height - 100);
         try {
             new TouchAction((PerformsTouchActions) BrowseTheWeb.as(actor).getDriver())
                     .press(pointOptionEnd)
                     // a bit more reliable when we add small wait
-                    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(PRESS_TIME)))
+                    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(305)))
                     .moveTo(pointOptionStart)
                     .release().perform();
         } catch (Exception e) {
             System.err.println("swipeScreen(): TouchAction FAILED\n" + e.getMessage());
             return;
         }
+
         actor.attemptsTo(
-                Enter.theValue(user.get(0).getCountryBelgium()).into(TXT_COUNTRY_BELGIUM),//está mapeado con el selector de argentina
+                Click.on(TXT_COUNTRY_COLOMBIA),
                 Enter.theValue(user.get(0).getState()).into(TXT_STATE),
                 Enter.theValue(user.get(0).getAddress()).into(TXT_ADDRESS),
                 Enter.theValue(user.get(0).getCity()).into(TXT_CITY),
