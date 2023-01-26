@@ -40,16 +40,16 @@ public class BuyProductPage {
     public static final Target ICN_MENU_CART = Target.the("Abrir el menu del carro de compras")
             .locatedForAndroid(By.xpath("(//android.widget.ImageView[@content-desc=\"Cart access\"])[1]"))
             .locatedForIOS(By.xpath(""));
-//falta identificar bien el error de la aplicacion para poder seguir desde aca con la compra
+
     public static final Target BTN_CHECK_PAY = Target.the("Cinfirmar la compra")
-            .locatedForAndroid(By.id("id/buttonCheckOut"))
-            .locatedForIOS(By.xpath("//androidx.drawerlayout.widget.DrawerLayout[@content-desc=\"Cart Details\"]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.Button"));
+            .locatedForAndroid(By.xpath("//androidx.drawerlayout.widget.DrawerLayout[@content-desc=\"Cart Details\"]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.Button"))
+            .locatedForIOS(By.xpath(""));
 
     public static final Target BTN_PAY_NOW = Target.the("Boton siguiente")
-            .locatedForAndroid(By.id("next_btn"))
-            .locatedForIOS(By.id(""));
+            .locatedForAndroid(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.Button"))
+            .locatedForIOS(By.xpath(""));
 
     public static final Target LBL_SUCCESSFUL_MESSAGE = Target.the("Mensaje que confirma que la compra fue exitosa")
-            .locatedForAndroid(By.xpath("//span[@class='roboto-regular ng-scope']"))
-            .locatedForIOS(By.id(""));
+            .locatedForAndroid(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView[2]"))
+            .locatedForIOS(By.xpath(""));
 }

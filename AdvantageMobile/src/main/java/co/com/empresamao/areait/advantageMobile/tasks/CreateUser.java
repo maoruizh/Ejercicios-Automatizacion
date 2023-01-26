@@ -1,20 +1,25 @@
 package co.com.empresamao.areait.advantageMobile.tasks;
 
+import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Enter;
+
+import co.com.empresamao.areait.advantageMobile.Models.CreateUserModels;
 import co.com.empresamao.areait.advantageMobile.userinterfaces.Mainpage;
+import static co.com.empresamao.areait.advantageMobile.userinterfaces.CreateAccountPage.*;
+
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
-import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
-import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
 
-import static co.com.empresamao.areait.advantageMobile.userinterfaces.CreateAccountPage.*;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+
+
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-import co.com.empresamao.areait.advantageMobile.Models.CreateUserModels;
+
 
 import java.util.List;
 import java.time.Duration;
@@ -92,7 +97,7 @@ public class CreateUser implements Task {
                 Enter.theValue(user.get(0).getState()).into(TXT_STATE),
                 Enter.theValue(user.get(0).getAddress()).into(TXT_ADDRESS),
                 Enter.theValue(user.get(0).getCity()).into(TXT_CITY),
-                Enter.theValue("05514").into(TXT_ZIP),
+                Enter.theValue(user.get(0).getZip()).into(TXT_ZIP),
                 Click.on(BTN_REGISTER)
         );
     }

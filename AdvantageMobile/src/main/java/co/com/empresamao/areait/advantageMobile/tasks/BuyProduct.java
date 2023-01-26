@@ -22,6 +22,7 @@ public class BuyProduct implements Task {
                 Click.on(ICN_MENU_CART),
                 Click.on(BTN_CHECK_PAY),
                 Click.on(BTN_PAY_NOW)
+
         );
     }
     public static BuyProduct buyProduct (){
