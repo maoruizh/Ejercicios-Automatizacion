@@ -1,6 +1,7 @@
 package co.com.empresamao.areait.advantageMobile.stepdefinitions;
 
 import co.com.empresamao.areait.advantageMobile.Models.CreateUserModels;
+import co.com.empresamao.areait.advantageMobile.tasks.BuyProduct;
 import co.com.empresamao.areait.advantageMobile.tasks.CreateUser;
 import co.com.empresamao.areait.advantageMobile.tasks.Main;
 import co.com.empresamao.areait.advantageMobile.utils.AppiumDriver;
@@ -24,8 +25,8 @@ public class CreateUserSteps {
 
     @When("^I enter the information to create The user$")
     public void iEnterTheInformationToCreateTheUser(List<CreateUserModels>user) {
-        OnStage.theActorInTheSpotlight().attemptsTo(Main.main());
         OnStage.theActorInTheSpotlight().attemptsTo(CreateUser.create(user));
+        OnStage.theActorInTheSpotlight().attemptsTo(BuyProduct.buyProduct());
 
     }
 

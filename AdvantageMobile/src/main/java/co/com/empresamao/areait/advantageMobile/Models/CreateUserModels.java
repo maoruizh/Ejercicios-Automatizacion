@@ -9,14 +9,14 @@ public class CreateUserModels {
     private String firstName;
     private String lastName;
     private String phoneNumber;
-    private String country;
-    private String countryColombia;
+    private String countryList;
+    private String countrySpecific;
     private String state;
     private String address;
     private String city;
     private String zip;
 
-    public CreateUserModels(String username, String email, String password, String confirmPassword, String firstName, String lastName, String phoneNumber, String country, String countryColombia, String state, String address, String city, String zip) {
+    public CreateUserModels(String username, String email, String password, String confirmPassword, String firstName, String lastName, String phoneNumber, String countryList, String countrySpecific, String state, String address, String city, String zip) {
         this.username = username;
         this.email = email;
         this.password = password;
@@ -24,12 +24,13 @@ public class CreateUserModels {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
-        this.country = country;
-        this.countryColombia = countryColombia;
+        this.countryList = countryList;
+        this.countrySpecific = countrySpecific;
         this.state = state;
         this.address = address;
         this.city = city;
         this.zip = zip;
+
     }
 
     public String getUsername() {
@@ -60,9 +61,7 @@ public class CreateUserModels {
         return confirmPassword;
     }
 
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
+    public void setConfirmPassword(String confirmPassword) { this.confirmPassword = confirmPassword; }
 
     public String getFirstName() {
         return firstName;
@@ -88,17 +87,19 @@ public class CreateUserModels {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getCountry() { return country; }
-
-    public void setCountry(String country) {
-        this.country = country;
+    public String getCountryList() {
+        return countryList;
     }
 
-    public String getCountryColombia() {return countryColombia;}
-
-    public void setCountryColombia(String countryColombia) {
-        this.countryColombia = countryColombia;
+    public void setCountryList(String countryList) {
+        this.countryList = countryList;
     }
+
+    public String getCountrySpecific() {
+        return countrySpecific;
+    }
+
+    public void setCountrySpecific(String countrySpecific) { this.countrySpecific = countrySpecific; }
 
     public String getState() {
         return state;
@@ -124,11 +125,7 @@ public class CreateUserModels {
         this.city = city;
     }
 
-    public String getZip() {
-        return zip;
-    }
+    public String getZip() { return zip; }
 
-    public void setZip(String zip) {
-        this.zip = zip;
-    }
+    public void setZip(String zip) { this.zip = zip; }
 }

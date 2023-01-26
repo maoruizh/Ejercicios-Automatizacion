@@ -5,6 +5,10 @@ import net.serenitybdd.screenplay.targets.Target;
 
 public class CreateAccountPage {
 
+    public static final Target LBL_CREATEACCOUNT = Target.the("Create account ")
+            .locatedForAndroid(By.id("textViewDontHaveAnAccount"))
+            .locatedForIOS(By.id(""));
+
     public static final Target TXT_USERNAME = Target.the("Username")
             .locatedForAndroid(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.EditText"))
             .locatedForIOS(By.xpath(""));
@@ -32,13 +36,14 @@ public class CreateAccountPage {
             .locatedForAndroid(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"))
             .locatedForIOS(By.xpath(""));
 
-    public static final Target TXT_COUNTRY = Target.the("Country")
-            .locatedForAndroid(By.id("linearLayoutCountry"))
+    public static final Target TXT_COUNTRY_LIST = Target.the("Country")
+            .locatedForAndroid(By.id("textViewCountries"))
             .locatedForIOS(By.id(""));
 
-    public static final Target TXT_COUNTRY_COLOMBIA = Target.the("Country_Colombia")
+    public static final Target TXT_COUNTRY_ARGENTINA = Target.the("Country_Argentina")
             .locatedForAndroid(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[9]"))
             .locatedForIOS(By.xpath(""));
+
     public static final Target TXT_STATE = Target.the("State")
             .locatedForAndroid(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.EditText"))
             .locatedForIOS(By.xpath(""));
@@ -54,4 +59,8 @@ public class CreateAccountPage {
     public static final Target TXT_ZIP = Target.the("Zip")
             .locatedForAndroid(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText"))
             .locatedForIOS(By.xpath(""));
+
+    public static final Target BTN_REGISTER = Target.the("Register")
+            .locatedForAndroid(By.id("buttonRegister"))
+            .locatedForIOS(By.id(""));
 }

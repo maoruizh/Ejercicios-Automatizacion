@@ -1,6 +1,6 @@
 package co.com.empresamao.areait.advantageMobile.tasks;
 
-import co.com.empresamao.areait.advantageMobile.userinterfaces.CreateAccountPage;
+import co.com.empresamao.areait.advantageMobile.userinterfaces.Mainpage;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
@@ -18,9 +18,7 @@ import co.com.empresamao.areait.advantageMobile.Models.CreateUserModels;
 
 import java.util.List;
 import java.time.Duration;
-
 import org.openqa.selenium.Dimension;
-import org.openqa.selenium.WebElement;
 
 public class CreateUser implements Task {
 
@@ -33,6 +31,9 @@ public class CreateUser implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
+                Click.on(Mainpage.ICN_HAMBURGER),
+                Click.on(Mainpage.LBL_LOGIN),
+                Click.on(LBL_CREATEACCOUNT),
                 Enter.theValue(user.get(0).getUsername()).into(TXT_USERNAME),
                 Enter.theValue(user.get(0).getEmail()).into(TXT_EMAIL),
                 Enter.theValue(user.get(0).getPassword()).into(TXT_PASSWORD),
@@ -67,29 +68,32 @@ public class CreateUser implements Task {
 
         actor.attemptsTo(
                 Enter.theValue(user.get(0).getPhoneNumber()).into(TXT_PHONE),
-                Click.on(TXT_COUNTRY)
+                Click.on(TXT_COUNTRY_LIST)
         );
-
+//todo este código esta bloqueado porque no funciona el segundo swipe up,
+// cada ejecucion termina en un lugar difernte y hace imposible escoger un pais
+       /*
         pointOptionStart = PointOption.point(dims.width / 2, dims.height / 2);
         pointOptionEnd = PointOption.point(dims.width / 2, dims.height - 100);
         try {
             new TouchAction((PerformsTouchActions) BrowseTheWeb.as(actor).getDriver())
                     .press(pointOptionEnd)
                     // a bit more reliable when we add small wait
-                    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(305)))
+                    .waitAction(WaitOptions.waitOptions(Duration.ofMillis(310)))
                     .moveTo(pointOptionStart)
                     .release().perform();
         } catch (Exception e) {
             System.err.println("swipeScreen(): TouchAction FAILED\n" + e.getMessage());
             return;
         }
-
+        */
         actor.attemptsTo(
-                Click.on(TXT_COUNTRY_COLOMBIA),
+                Click.on(TXT_COUNTRY_ARGENTINA),
                 Enter.theValue(user.get(0).getState()).into(TXT_STATE),
                 Enter.theValue(user.get(0).getAddress()).into(TXT_ADDRESS),
                 Enter.theValue(user.get(0).getCity()).into(TXT_CITY),
-                Enter.theValue(user.get(0).getZip()).into(TXT_ZIP)
+                Enter.theValue("05514").into(TXT_ZIP),
+                Click.on(BTN_REGISTER)
         );
     }
 
