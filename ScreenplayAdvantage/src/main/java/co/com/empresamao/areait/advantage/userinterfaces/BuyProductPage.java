@@ -14,6 +14,6 @@ public class BuyProductPage {
     public static final Target ICN_CHECK = Target.the("Cinfirmar la compra").located(By.id("checkOutPopUp"));
     public static final Target ICN_NEXT = Target.the("Boton siguiente").located(By.id("next_btn"));
     public static final Target ICN_CREDITCARD = Target.the("Marcar la tarjeta de credito").located(By.id("pay_now_btn_MasterCredit"));
-    public static final Target LBL_SUCCESSFUL_MESSAGE = Target.the("Mensaje que confirma que la compra fue exitosa").located(By.xpath("//span[@class='roboto-regular ng-scope']"));
+    public static final Target LBL_SUCCESSFUL_MESSAGE = Target.the("Mensaje que confirma que la compra fue exitosa").located(By.xpath("//*[@id=\"orderPaymentSuccess\"]/h2/span"));
 
 }

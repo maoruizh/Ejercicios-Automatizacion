@@ -1,30 +1,62 @@
-plugins {
-    id 'java'
+apply plugin: 'java'
+apply plugin: 'org.sonarqube'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+apply plugin: "net.serenity-bdd.serenity-gradle-plugin"
+
+allprojects {
+    ext.baseVersion = "0.1"
+    ext.snapshotVersion = true
+
+    group = "org.sonarqube"
+    version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+buildscript {
+    repositories {
+        maven {
+            url "https://repo1.maven.org/maven2/"
+        }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:3.4.0.2513'
+        classpath 'org.ajoberstar:gradle-jacoco:0.1.0'
+        classpath 'org.sonarqube.gradle:gradle-sonarqube-plugin:1.0'
+        classpath "net.serenity-bdd:serenity-gradle-plugin:3.4.2"
+    }
+}
+
+test {
+    ignoreFailures = true
+    systemProperties(System.getProperties())
+}
 
 repositories {
-    mavenCentral()
+    repositories {
+        maven {
+            url "https://repo1.maven.org/maven2/"
+        }
+    }
+}
+dependencies {
+    implementation('net.serenity-bdd:serenity-core:3.6.0')
+    implementation('net.serenity-bdd:serenity-junit:3.6.0')
+    implementation('net.serenity-bdd:serenity-screenplay:3.6.0')
+    implementation('net.serenity-bdd:serenity-screenplay-webdriver:3.6.0')
+    implementation('com.google.guava:guava:31.1-jre')
+    implementation('net.serenity-bdd:serenity-cucumber:3.6.0')
+    implementation('io.appium:java-client:8.3.0')
+    implementation('org.jvnet.com4j:com4j:2.1')
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.0'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
+    implementation group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '3.6.0'
+    implementation('org.slf4j:slf4j-simple:2.0.6')
+    implementation('net.serenity-bdd:serenity-ensure:3.5.1')
 }
 
-dependencies {
-    implementation('net.serenity-bdd:serenity-core:2.0.82')
-    implementation('net.serenity-bdd:serenity-junit:2.0.82')
-    implementation('net.serenity-bdd:serenity-screenplay:2.0.82')
-    implementation('net.serenity-bdd:serenity-screenplay-webdriver:2.0.82')
-    implementation('com.google.guava:guava:23.0')
-    implementation('net.serenity-bdd:serenity-cucumber:1.9.45')
-    implementation('io.appium:java-client:6.1.0')
-    implementation('org.jvnet.com4j:com4j:2.1')
-    implementation('org.seleniumhq.selenium:selenium-server:3.14.0')
-    implementation('net.serenity-bdd:serenity-gradle-plugin:2.0.82')
-    testImplementation('junit:junit:4.12')
-    implementation group: 'net.serenity-bdd', name: 'serenity-gradle-plugin', version: '1.0.23'
-    implementation('net.serenity-bdd:serenity-rest-assured:2.0.82')
-    implementation('net.serenity-bdd:serenity-screenplay-webdriver:2.0.82')
-    implementation('com.google.code.gson:gson:2.8.6')
-    implementation('org.slf4j:slf4j-simple:1.7.25')
-    implementation('net.serenity-bdd:serenity-ensure:2.0.49')
-}
+compileJava.options.encoding = 'UTF-8'
+gradle.startParameter.continueOnFailure = true

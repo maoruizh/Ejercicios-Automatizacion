@@ -6,10 +6,10 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static co.com.empresamao.areait.advantage.userinterfaces.LoginPage.*;
+import static co.com.empresamao.areait.advantage.utils.Constants.*;
 
 public class LoginUser implements Task {
     @Override
@@ -21,7 +21,7 @@ public class LoginUser implements Task {
                 Click.on(ICN_LOGIN_MENU_USER),
 
                 WaitUntil.the(TXT_LOGIN_USER_NAME, isVisible()).forNoMoreThan(15).seconds(),
-                Enter.theValue("Maoruizh5333").into(TXT_LOGIN_USER_NAME),
+                Enter.theValue(LOGIN_SUCCESSFULLY_MESSAGE).into(TXT_LOGIN_USER_NAME),
                 Enter.theValue("Aa$123456789").into(TXT_LOGIN_PASSWORD),
                 Click.on(BTN_LOGIN_SIGN_IN)
         );

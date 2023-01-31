@@ -20,7 +20,7 @@ public class CreateUserPage {
     public static final Target TXT_POSTAL_CODE= Target.the("Codigo postal").located(By.name("postal_codeRegisterPage"));
     public static final Target CHK_I_AGREE= Target.the("Estoy de acuerdo").located(By.name("i_agree"));
     public static final Target BTN_REGISTER= Target.the("Registrar").located(By.id("register_btnundefined"));
-    public static final Target BTN_USER = Target.the("Boton menu del usuario").located(By.xpath("(//span[contains(text(),'Maoruizh533333')])[2]")); //este selector creo que se puede cambiar por el primero de todos, verificar
+    public static final Target BTN_USER = Target.the("Boton menu del usuario").located(By.id("menuUserLink")); //este selector creo que se puede cambiar por el primero de todos, verificar
     public static final Target BTN_MY_ACCOUNT = Target.the("Boton cuenta").located(By.xpath("//*[@id=\"loginMiniTitle\"]/label[1]"));
     public static final Target BTN_EDIT_PAYMENT = Target.the("Editar Datos de tarjeta").located(By.xpath("//*[@id=\"myAccountContainer\"]/div[4]/h3/a"));
     public static final Target BTN_CREDIT_CARD = Target.the("Seleccionar tarjeta de credito").located(By.xpath("//*[@id=\"paymentMethod\"]/div/div[1]/div[2]"));
@@ -31,7 +31,7 @@ public class CreateUserPage {
     public static final Target BTN_CARD_HOLDER = Target.the("Propietario de la tarjeta").located(By.name("cardholder_name"));
     public static final Target CHK_PREFERREDPAYMENT = Target.the("Guardar metodo de pago preferente").located(By.name("save_master_credit"));
     public static final Target BTN_SAVE = Target.the("Guardar cambios").located(By.xpath("(//button[@id=\"save_btnundefined\"])[2]"));
-    public static final Target BTN_CREATE_USER_MESSAGE = Target.the("valida el nombre del usuario creado").located(By.xpath("(//span[contains(text(),'Maoruizh533333')])[2]"));
+    public static final Target BTN_CREATE_USER_MESSAGE = Target.the("valida el nombre del usuario creado").located(By.id("menuUserLink"));
     public static final Target BTN_HOME = Target.the("Regresar al inicio").located(By.xpath("/html/body/div[3]/nav/a[1]"));
 
 }

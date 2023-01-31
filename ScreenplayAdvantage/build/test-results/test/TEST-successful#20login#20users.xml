@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="successful login users" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-01-31T16:52:20" hostname="NIDO-LAPTOP" time="23.145">
+  <properties/>
+  <testcase name="create an user successfully" classname="successful login users" time="23.145"/>
+  <system-out><![CDATA[|-- Given I want to go to the login page of advantage demo
+|---- Mao opens the browser at https://www.advantageonlineshopping.com/#/
+|-- When I enter the information to login a user
+|---- Mao login user
+|------ Mao waiting
+|-------- Mao should see Ingresar al menu de usuario that is displayed
+|------ Mao waiting
+|-------- Mao should see Ingresar al menu de usuario that is displayed
+|------ Mao clicks on Ingresar al menu de usuario
+|------ Mao enters 'Maoruizh5333' into Nombre de usuario
+|------ Mao enters 'Aa$123456789' into Ingresar contrasena
+|------ Mao clicks on Ingresar
+|---- Mao buy products
+|------ Mao clicks on Seleccionar la categoria de laptops
+|------ Mao clicks on Seleccionar una laptop de hewlett packard
+|------ Mao clicks on Cambiar a color gris
+|------ Mao clicks on Clic en el campo cantidad
+|------ Mao enters '4' into Cambiar la cantidad
+|------ Mao clicks on Adicionar al carro de compras
+|------ Mao clicks on Abrir el menu del carro de compras
+|------ Mao clicks on Cinfirmar la compra
+|------ Mao clicks on Boton siguiente
+|------ Mao clicks on Marcar la tarjeta de credito
+|-- Then I validate the correct user login
+|---- Then validate login message
+|---- Then validate buy message
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/ASUS/Documents/GitHub/Ejercicios-Automatizacion/ScreenplayAdvantage/src/test/resources/Features/login_users.feature
+[Test worker] WARN io.cucumber.core.plugin.SerenityReporter - Feature from file:///C:/Users/ASUS/Documents/GitHub/Ejercicios-Automatizacion/ScreenplayAdvantage/src/test/resources/Features/login_users.feature is not under the 'features' directory. Requirements report will not be correctly generated!
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+create an user successfully(successful-login-users;create-an-user-successfully)
+--------------------------------------------------------------------------------
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Starting Chrome driver instance with capabilities:
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider - Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 16386
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+create an user successfully
+----------------------------------------------------------------------
+]]></system-err>
+</testsuite>

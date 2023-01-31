@@ -1,8 +1,11 @@
 package co.com.empresamao.areait.advantage.utils;
+import co.com.empresamao.areait.advantage.tasks.CreateUsers;
+import co.com.empresamao.areait.advantage.tasks.LoginUser;
 
 public class Constants {
     public static final String URL = "https://www.advantageonlineshopping.com/#/";
     public static final String ACTOR_PAGE = "Mao";
-    public static final String RESULT = "Maoruizh533333";
-    public static final String BUY_SUCCESSFULLY = "Thank you for buying with Advantage";
+    public static final String LOGIN_SUCCESSFULLY_MESSAGE = "Maoruizh5333";
+    public static final String CREATE_SUCCESSFULLY_MESSAGE = "Maoruizh533339"; //siempre que se corra la tarea de creacion de usuario se debe cambiar este usuario
+    public static final String BUY_SUCCESSFULLY_MESSAGE = "Thank you for buying with Advantage";
 }

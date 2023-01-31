@@ -1,18 +1,16 @@
 package co.com.empresamao.areait.advantage.tasks;
 
 import co.com.empresamao.areait.advantage.interactions.Waiting;
-import co.com.empresamao.areait.advantage.userinterfaces.CreateUserPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SendKeys;
 import net.serenitybdd.screenplay.waits.WaitUntil;
-import org.openqa.selenium.Keys;
-
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static co.com.empresamao.areait.advantage.userinterfaces.CreateUserPage.*;
+import static co.com.empresamao.areait.advantage.utils.Constants.*;
 
 public class CreateUsers implements Task {
     @Override
@@ -25,7 +23,7 @@ public class CreateUsers implements Task {
                 Click.on(LBL_CREATE_NEW_ACCOUNT),
 
                 WaitUntil.the(TXT_USER_NAME,isVisible()).forNoMoreThan(15).seconds(),
-                Enter.theValue("Maoruizh533333").into(TXT_USER_NAME),
+                Enter.theValue(CREATE_SUCCESSFULLY_MESSAGE).into(TXT_USER_NAME),
                 Enter.theValue("mao@ruiz.com").into(TXT_USER_EMAIL),
                 Enter.theValue("Aa$123456789").into(TXT_PASSWORD),
                 Enter.theValue("Aa$123456789").into(TXT_CONFIRM_PASSWORD),
