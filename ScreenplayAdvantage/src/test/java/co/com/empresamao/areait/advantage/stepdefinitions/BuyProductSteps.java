@@ -1,6 +1,7 @@
 package co.com.empresamao.areait.advantage.stepdefinitions;
 import co.com.empresamao.areait.advantage.questions.ValidateBuyMessage;
 import co.com.empresamao.areait.advantage.tasks.BuyProducts;
+import co.com.empresamao.areait.advantage.tasks.LoginUser;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
@@ -10,6 +11,7 @@ public class BuyProductSteps {
 
     @When("^I enter the information to buy a product$")
     public void iEnterTheInformationToBuyAProduct() {
+        theActorInTheSpotlight().attemptsTo(LoginUser.loginUser());
         theActorInTheSpotlight().attemptsTo(BuyProducts.buyProducts());
     }
 

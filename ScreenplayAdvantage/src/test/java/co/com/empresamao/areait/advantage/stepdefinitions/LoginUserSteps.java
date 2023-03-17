@@ -25,9 +25,9 @@ public class LoginUserSteps {
     public void iWantToGoToThePageOfAdvantageDemo() {
         OnStage.setTheStage(Cast.ofStandardActors());
         OnStage.theActorCalled(ACTOR_PAGE);
-        //OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(MyDriversWeb.web().inThePage(URL)));
+        //OnStage.theActorInTheSpotlight().can(BrowseTheWeb.with(MyDriversWeb.web().inThePage(URL))); asi es para un solo navegador
         theActorInTheSpotlight().can(BrowseTheWeb.with(driver));
-        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url("https://www.advantageonlineshopping.com/#/"));
+        OnStage.theActorInTheSpotlight().wasAbleTo(Open.url(URL));
         driver.manage().window().maximize();
     }
 
@@ -35,7 +35,6 @@ public class LoginUserSteps {
     public void iEnterTheInformationToLoginAUser() {
         theActorInTheSpotlight().attemptsTo(LoginUser.loginUser());
         theActorInTheSpotlight().attemptsTo(BuyProducts.buyProducts());
-
     }
 
     @Then("^I validate the correct user login$")

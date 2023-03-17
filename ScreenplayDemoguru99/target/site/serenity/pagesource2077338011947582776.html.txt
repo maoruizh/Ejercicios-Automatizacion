@@ -1,0 +1,294 @@
+<html><!-- comments:Application home page--><head>
+    
+    
+
+<!--comments: To link to a common cascading style sheets-->
+
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="stylesheet" type="text/css" href="../scripts/commonstyle.css">
+
+<!-- Include the JavaScript files -->
+<script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_page_level_ads_2023031401.js?cb=31073123"></script><script async="" defer="" src="https://ccpa.privacymanager.io/1/ccpa.bundle.js"></script><script type="text/javascript" async="" src="https://ccpa-wrapper.privacymanager.io/ccpa/75b86dcc-d9aa-4442-a859-bcb098cdb7d8/ccpa-liveramp.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script language="JavaScript" src="../scripts/validate_login.js"></script>
+<script language="JavaScript" src="../scripts/basic_functions.js"></script>
+<script language="JavaScript" src="JavaScript/test.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/slider-cars.css" rel="stylesheet">
+    <link href="css/home-bar.css" rel="stylesheet"> 
+<style>
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+a:link {
+    COLOR: #000;
+    LETTER-SPACING: 0pt;
+    TEXT-DECORATION: none;
+    FONT-SIZE: 14px;
+    FONT-FAMILY: sans-serif, Verdana, Tahoma;
+}
+table{
+    margin-top:160px;
+}
+td{
+    padding:4px;
+}
+</style>
+
+<title> GTPL Bank Home Page </title>
+
+<meta http-equiv="origin-trial" content="Az6AfRvI8mo7yiW5fLfj04W21t0ig6aMsGYpIqMTaX60H+b0DkO1uDr+7BrzMcimWzv/X7SXR8jI+uvbV0IJlwYAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+USTya+tNvDPaxUgJooz+LaVk5hPoAxpLvSxjogX4Mk8awCTQ9iop6zJ9d5ldgU7WmHqBlnQB41LHHRFxoaBwoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7FovoGr67TUBYbnY+Z0IKoJbbmRmB8fCyirUGHavNDtD91CiGyHHSA2hDG9r9T3NjUKFi6egL3RbgTwhhcVDwUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2023031401.js?cb=31073123" async=""></script><script async="" src="https://fundingchoicesmessages.google.com/i/103512698?ers=3"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxX112LoNawJ3wM8ZPueF5o1npGrC6P-bIwZQTfAX0A2mtkSLsfETwbXORPjX304N3AKNROFrzeOXnLH1paNTss=?fccs=W1siQUtzUm9sLVRqWTFHakRUX0hlSGZONExmbXhSbF9QNlc2ek12bDl5dU41eS1DMERMekx0WENEYkM3Q0xzZVE5LTh0SEp4Y3hBWnozd0FLTkd4Sm9TVGlKVEowX3MxRGNkWDVPOW9EUmJjNUd0cFVKYlpuUXRnTGlqNVN6a01MLXZkeFk4Ym5FM0FobmJzUEZTV0lidy13RlZSbHdrZDhhb0xnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2NzkwODQ4NDcsMTA0MDAwMDAwXSwiMjI0QUUzRjItNUUxQS00M0IyLTk5NUQtMTIzRTFGQTAxRUI4IixudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly9kZW1vLmd1cnU5OS5jb20vVjEvaW5kZXgucGhwIixudWxsLFtbOCwiclBubzlURUk2a1EiXSxbOSwiZXMiXSxbMTcsIltmYWxzZV0iXV1d"></script><link rel="preload" href="https://adservice.google.com.co/adsid/integrator.js?domain=demo.guru99.com" as="script"><script type="text/javascript" src="https://adservice.google.com.co/adsid/integrator.js?domain=demo.guru99.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=demo.guru99.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=demo.guru99.com"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxWj2zZZX5z1ph-JCfkbnpR_SVdTuP1mc93k90_9MIBOtqiSbBYIjwd6kzfjnOvKl1EF-44ZVV3oPGG0iLIRG-qdqqfRTaaYMxwBOALTIk51H0igsuFi0lWs0EGmQ3WCRkskURC6TQ==?fccs=W1siQUtzUm9sLVRqWTFHakRUX0hlSGZONExmbXhSbF9QNlc2ek12bDl5dU41eS1DMERMekx0WENEYkM3Q0xzZVE5LTh0SEp4Y3hBWnozd0FLTkd4Sm9TVGlKVEowX3MxRGNkWDVPOW9EUmJjNUd0cFVKYlpuUXRnTGlqNVN6a01MLXZkeFk4Ym5FM0FobmJzUEZTV0lidy13RlZSbHdrZDhhb0xnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2NzkwODQ4NDcsMjQ4MDAwMDAwXSwiMjI0QUUzRjItNUUxQS00M0IyLTk5NUQtMTIzRTFGQTAxRUI4IixudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyXSwiaHR0cHM6Ly9kZW1vLmd1cnU5OS5jb20vVjEvaW5kZXgucGhwIixudWxsLFtbOCwiclBubzlURUk2a1EiXSxbOSwiZXMiXSxbMTcsIltmYWxzZV0iXV1d"></script><script async="" src="https://fundingchoicesmessages.google.com/f/AGSKWxUirPUStkVcTP9RqZ2H20sQoultYiLFiM1Ptyvf_S3EOs2q49AG-XZrEkN6idXeXxFJ2KSJ5uQa6Uo6jdsHrh3d3OODQ-fd6NQtY7t1t0jtIpxzz6NyitGx82QvJcS4Ta10TXH0Ag==?fccs=W1siQUtzUm9sLVRqWTFHakRUX0hlSGZONExmbXhSbF9QNlc2ek12bDl5dU41eS1DMERMekx0WENEYkM3Q0xzZVE5LTh0SEp4Y3hBWnozd0FLTkd4Sm9TVGlKVEowX3MxRGNkWDVPOW9EUmJjNUd0cFVKYlpuUXRnTGlqNVN6a01MLXZkeFk4Ym5FM0FobmJzUEZTV0lidy13RlZSbHdrZDhhb0xnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2NzkwODQ4NDksMjgwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw5LDZdLG51bGwsMixudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdLCJodHRwczovL2RlbW8uZ3VydTk5LmNvbS9WMS9pbmRleC5waHAiLG51bGwsW1s4LCJyUG5vOVRFSTZrUSJdLFs5LCJlcyJdLFsxNywiW2ZhbHNlXSJdXV0"></script></head>
+
+
+<!--comments: home page body-->
+<body>
+    
+<meta name="robots" content="noindex, nofollow">
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-1248015-24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1248015-24');
+</script>  
+
+ <div class="container-fluid">
+        <!-- Top logo -->
+        <div class="row topper">
+            <div class="col-md-2 header-section">
+                <div class="logo">
+                    <a href="https://www.guru99.com/" title="Home" rel="home" style="border: medium none;"> <img src="/logo.png" alt="Guru99 Demo Sites" role="presentation"> </a><br>
+                    <div id="site-name" class="site-name" style="text-align: center;"><a href="https://www.guru99.com/" title="Home" rel="home" style="font-size:32px;">Demo Site</a></div>
+                    
+                   
+                </div>
+                <div id="name-and-slogan" style="padding-top: 0px;padding-left: 0px;">
+                    <div id="site-name" class="site-name">
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="top-banner col-md-8">
+               
+ <table style="margin-top:0px;border:1px solid black;" width="60%">
+                            <tbody><tr>
+                                <td width="20%" style="text-align:center;"><a href="https://www.guru99.com/software-testing.html"><img src="https://demo.guru99.com/images/testing-logo-1.png" style="padding-bottom: 5px;"></a><br>
+                                <a href="https://www.guru99.com/software-testing.html" style="font-size: 18px;">Testing</a></td>
+                                
+                                <td width="20%" style="border:1px solid black;text-align:center;"><a href="https://www.guru99.com/selenium-tutorial.html"><img src="https://demo.guru99.com/images/selenium-logo.jpg" style="padding-bottom: 5px;"></a><br>
+                                <a href="https://www.guru99.com/selenium-tutorial.html" style="font-size: 18px;">Selenium</a></td>
+                                
+                                <td width="20%" style="border:1px solid black;text-align:center;"><a href="https://www.guru99.com/live-projects.html"><img src="https://demo.guru99.com/images/live-project-logo.png" style="padding-bottom: 5px;"></a><br>
+                                <a href="https://www.guru99.com/live-projects.html" style="font-size: 18px;">Live Project</a></td>
+                                
+                                <td width="20%" style="text-align:center;"><a href="https://www.guru99.com/java-tutorial.html"><img src="https://demo.guru99.com/images/java-logo.png" style="padding-bottom: 5px;"></a><br>
+                                <a href="https://www.guru99.com/java-tutorial.html" style="font-size: 18px;">Java</a></td>
+                            </tr>
+                        </tbody></table>
+
+ 
+
+             
+
+            </div>
+        </div>
+        <!-- End Top -->
+        
+   
+<div class="row">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container" style="padding-right: 0px;padding-left: 0px;">
+                    <!-- Brand and toggle -->
+                   
+
+                    <!-- Nav links for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Selenium
+					  <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../../test/flash-testing.html">Flash Movie Demo</a></li>
+                                    <li><a href="../../test/radio.html">Radio &amp; Checkbox Demo</a></li> 
+                                    <li><a href="../../test/table.html">Table Demo</a></li> 
+                                    <li><a href="../../test/link.html">Accessing Link</a></li>
+                                    <li><a href="../../test/ajax.html">Ajax Demo</a></li>
+                                    <li><a href="../../test/block.html">Inside &amp; Outside Block Level Tag</a></li>
+                                    <li><a href="../../test/delete_customer.php">Delete Customer Form</a></li>
+                                    <li><a href="../../test/yahoo.html">Yahoo</a></li>
+                                    <li><a href="../../test/tooltip.html">Tooltip</a></li>
+                                    <li><a href="../../test/upload/">File Upload</a></li>
+                                    <li><a href="../../test/login.html">Login</a></li>
+                                    <li><a href="../../test/social-icon.html">Social Icon</a></li>
+                                    <li><a href="../../test/autoit.html">Selenium Auto IT</a></li>
+                                    <li><a href="../../test/facebook.html">Selenium IDE Test</a></li>
+                                    <li><a href="../../test/guru99home/">Guru99 Demo Page</a></li>
+                                    <li><a href="../../test/guru99home/scrolling.html">Scrollbar Demo</a></li>
+                                    <li><a href="../../test/image_upload/">File Upload using Sikuli Demo</a></li>
+                                    <li><a href="../../test/cookie/selenium_aut.php">Cookie Handling Demo</a></li>
+                                    <li><a href="../../test/drag_drop.html">Drag and Drop Action</a></li>
+                                    <li><a href="../../test/">Selenium DatePicker Demo</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                                                                                                                          
+                             </li>
+                             <li class="dropdown">
+                                 <a href="http://demo.guru99.com/insurance/v1/index.php">Insurance Project</a>                             </li>
+                             <li class="dropdown">
+                               <a href="http://demo.guru99.com/Agile_Project/Agi_V1/">Agile Project</a>
+                                
+                            </li>
+                             <li class="dropdown">
+                                 <a href="http://demo.guru99.com/V1/index.php">Bank Project</a>                                                                 
+                                    
+                                         
+                            </li>
+                            <li class="dropdown"><a href="http://demo.guru99.com/Security/SEC_V1/index.php">Security Project</a></li>                            
+                            <li class="dropdown"> 
+                                                       </li>
+                           <li class="dropdown"><a href="http://demo.guru99.com/telecom/index.html">Telecom Project</a></li>
+                           
+                           <li class="dropdown"><a href="http://demo.guru99.com/payment-gateway/index.php">Payment Gateway Project</a></li>
+                           
+                           <li class="dropdown"><a href="http://demo.guru99.com/test/newtours/">New Tours</a></li>
+                           
+                           <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 14px;">SEO
+					            <b class="caret"></b></a>
+                                <ul class="dropdown-menu" style="font-size: 15px;">
+                                   <li><a href="http://demo.guru99.com/seo/page-1.html">Page-1</a></li>
+                                   <li><a href="http://demo.guru99.com/seo/page-2.html">Page-2</a></li>
+                                   <li><a href="http://demo.guru99.com/seo/page-3.html">Page-3</a></li>
+                                   <li><a href="http://demo.guru99.com/seo/page-4.html">Page-4</a></li>
+                                   <li><a href="http://demo.guru99.com/seo/page-5.html">Page-5</a></li>
+                                   <li><a href="http://demo.guru99.com/seo/page-6.html">Page-6</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                       
+                        
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+     </div>
+<div><h2 class="barone" style="font-size:27px;font-weight:700;padding: 10px;">Gtpl Bank</h2></div>
+
+<table class="layout" border="0" width="90%" align="center">
+<tbody><tr>
+<td align="center"></td>
+</tr>
+</tbody></table>
+
+
+<!--<div class="heading3"align="center">Welcome To The Online Banking Page of GTPL Bank</div> -->
+
+<br><br><br>
+
+<br><br><br><br>
+
+<br><br><br><br><br><br>
+
+<form name="frmLogin" method="POST" action="index.php">
+
+<table border="0" width="50%" align="center">
+
+
+<!-- Display User ID label and its text box-->
+<tbody><tr>
+	<td align="center">UserID<font class="mandatory">(*)</font></td>
+	<td><input type="text" name="uid" maxlength="10" onkeyup="validateuserid();" onblur="validateuserid();"><label id="message23" style="visibility: hidden;">User-ID must not be blank</label></td>
+</tr>
+
+<!-- Display Password and its text box-->
+<tr>
+	<td align="center">Password<font class="mandatory">(*)</font></td>
+	<td><input type="password" name="password" onkeyup="validatepassword();" onblur="validatepassword();"><label id="message18" style="visibility: hidden;">Password must not be blank</label></td>
+</tr>
+
+<tr>
+<td><span class="mandatory">* mandatory field</span></td>
+<td><input type="submit" name="btnLogin" value="LOGIN">
+<input type="reset" name="btnReset" value="RESET"></td>
+</tr>
+
+</tbody></table>
+</form><br><br><br><br><br><br><br>
+<h4 class="barone" style="padding:5px;"><span style="font-size:18px;font-weight: 700;">Steps To Generate Access</span></h4>
+    <div>
+        <ol style="font-size:18px;">
+            <li>Visit - <a href="http://demo.guru99.com/">here</a></li>
+            <li>Enter your email id</li>
+            <li>Login credentials is allocated to you and mailed at your id</li>
+            <li>Login credentials are only valid for 20 days! So Hurry Up and quickly complete your tasks</li>
+        </ol>
+    </div>
+ <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
+<script>var gptadslots=[];
+var googletag=googletag||{cmd:[]};
+window.googletag = window.googletag || {cmd: []};
+var interstitialSlot, staticSlot, staticSlot1;
+</script>
+
+<script type="text/javascript" src="//fdyn.pubwise.io/script/b7da2361-4ada-4374-9097-af748311b5fe/v3/dyn/pre_pws.js"></script>
+<script type="text/javascript" src="//fdyn.pubwise.io/script/b7da2361-4ada-4374-9097-af748311b5fe/v3/dyn/pws.js" async=""></script>
+
+<script>
+googletag.cmd.push(function(){
+googletag.pubads().collapseEmptyDivs(true);
+googletag.pubads().disableInitialLoad();
+
+
+gptadslots['interstitial'] = googletag.defineOutOfPageSlot('/24132379/INTERSTITIAL_DemoGuru99', googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+
+
+googletag.enableServices();
+googletag.pubads().setTargeting('TestMode', ['True']);
+});</script>
+
+<div id="interstitial">
+ <script type="text/javascript"> 
+ if (typeof(pubwise) != 'undefined' && pubwise.enabled === true) {
+ pubwise.que.push(function() {              
+ pubwise.renderAd('interstitial');
+      });
+    }else{
+ googletag.cmd.push(function () {                    
+ googletag.display('interstitial');
+ googletag.pubads().refresh([gptadslots['interstitial']]);          
+      });
+    }
+ </script>
+</div>
+
+<div id="static-ad-1"></div>
+<script>
+        googletag.cmd.push(function() {
+        googletag.display(staticSlot);
+        });
+</script>     
+    
+<script src="JavaScript/jquery.js"></script><iframe name="googlefcPresent" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="__ccpaLocator" style="display: none;"></iframe><iframe name="__uspapiLocator" style="display: none;"></iframe>
+    <script src="JavaScript/bootstrap.min.js"></script>
+    <script src="JavaScript/treemenu.js"></script>
+    <script src="JavaScript/slider-cars.js"></script>
+    <script src="JavaScript/home-bar.js"></script><iframe src="https://edefe0a2131d7e5a6e4ffaea43e72fd9.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" style="visibility: hidden; display: none;"></iframe>
+
+
+<iframe name="__tcfapiLocator" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcInactive" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe name="googlefcLoaded" src="about:blank" style="display: none; width: 0px; height: 0px; border: none; z-index: -1000; left: -1000px; top: -1000px;"></iframe><iframe src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe></body></html>

@@ -20,7 +20,7 @@ public class CreateUserPage {
     public static final Target TXT_POSTAL_CODE= Target.the("Codigo postal").located(By.name("postal_codeRegisterPage"));
     public static final Target CHK_I_AGREE= Target.the("Estoy de acuerdo").located(By.name("i_agree"));
     public static final Target BTN_REGISTER= Target.the("Registrar").located(By.id("register_btnundefined"));
-    public static final Target BTN_USER = Target.the("Boton menu del usuario").located(By.id("menuUserLink")); //este selector creo que se puede cambiar por el primero de todos, verificar
+    public static final Target BTN_USER = Target.the("Boton menu del usuario").located(By.id("menuUserLink"));
     public static final Target BTN_MY_ACCOUNT = Target.the("Boton cuenta").located(By.xpath("//*[@id=\"loginMiniTitle\"]/label[1]"));
     public static final Target BTN_EDIT_PAYMENT = Target.the("Editar Datos de tarjeta").located(By.xpath("//*[@id=\"myAccountContainer\"]/div[4]/h3/a"));
     public static final Target BTN_CREDIT_CARD = Target.the("Seleccionar tarjeta de credito").located(By.xpath("//*[@id=\"paymentMethod\"]/div/div[1]/div[2]"));
