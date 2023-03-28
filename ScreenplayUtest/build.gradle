@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('net.serenity-bdd:serenity-screenplay:2.0.82')
+    implementation('net.serenity-bdd:serenity-cucumber:1.9.45')
+    implementation('net.serenity-bdd:serenity-junit:2.0.82')
+    implementation('net.serenity-bdd:serenity-core:2.0.82')
+    testImplementation('junit:junit:4.12')
+}
