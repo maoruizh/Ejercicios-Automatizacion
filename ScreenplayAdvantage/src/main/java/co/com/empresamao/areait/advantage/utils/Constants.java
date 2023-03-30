@@ -1,6 +1,4 @@
 package co.com.empresamao.areait.advantage.utils;
-import co.com.empresamao.areait.advantage.tasks.CreateUsers;
-import co.com.empresamao.areait.advantage.tasks.LoginUser;
 
 public class Constants {
     public static final String URL = "https://www.advantageonlineshopping.com/#/";
