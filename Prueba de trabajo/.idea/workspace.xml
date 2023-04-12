@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b1adb01-abeb-4194-b599-5e2c99bd369b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Ejercicios-Automatizacion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Prueba de trabajo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicios/falabella.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicios/linio.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../circle.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/add-doctor.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/add-hospital.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/add-patient.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/add-room.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/appointment-scheduling.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/cucumber.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/doctor-list.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/profile-config.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/protractor.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/dojo-santi-g/typescript.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/falabella/Login-Modal.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/falabella/search-categories.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/falabella/search-categories2.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/linio/login.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../features/linio/productDetails.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/cucumberReporter.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/protractor-cucumber-typescript-result.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../images/protractor-typescript-cucumber.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/Generics/page-mapping.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/add-Hospital-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/add-doctor-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/add-patient-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/add-room-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/appointment-Scheduling-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/doctor-list-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/profile-config-pages.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/dojo-santi-g/searchPage.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/falabella/Login-Modal-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/falabella/components/category.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/falabella/components/menu.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/falabella/components/subcategory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/falabella/search-categories-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/falabella/search-categories2-page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/linio/login.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pages/linio/productDetails.page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/Generics/generics.steps.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/add-Hospital-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/add-doctor-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/add-patient-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/add-room-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/appointment-Scheduling-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/clearPage.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/doctor-list-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/homePage.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/profile-config-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/dojo-santi-g/search.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/falabella/Login-Modal-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/falabella/search-categories-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/falabella/search-categories2-steps.tsxa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/linio/login.steps.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stepdefinitions/linio/productDetails.steps.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../support/hooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../support/reporter.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tslint.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/Appu">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2H68m6dn9I47iGL2Oi9ntiA5xAp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/ASUS/IdeaProjects/Ejercicios-Automatizacion/Prueba de trabajo"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b1adb01-abeb-4194-b599-5e2c99bd369b" name="Changes" comment="" />
+      <created>1667594329042</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667594329042</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
